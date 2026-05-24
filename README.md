@@ -47,14 +47,75 @@ Ubicación
 Se desarrolló un algoritmo para identificar diferentes superficies en imágenes como césped, tierra, cemento y asfalto.
 
 Ubicación
-2_actividades_individuales/clasificacion_texturas
+2_actividades_abc/clasificacion_texturas
 
 ### Filtro de suavizado
 
 Se implementó un filtro promedio 3x3 para reducir ruido y suavizar imágenes.
 
 Ubicación
-2_actividades_individuales/filtro_suavizado
+2_actividades_abc/filtro_suavizado
+
+IMPLEMENTACIÓN DE UN FILTRO DE SUAVIZADO
+Descripción
+Este módulo consiste en la implementación de un filtro de promedio utilizando una ventana de 3x3 píxeles. El objetivo es reducir el ruido en la imagen y suavizar las transiciones de color, obteniendo una imagen con mejor calidad visual.
+Metodología utilizada
+El filtro recorre cada píxel de la imagen aplicando una ventana de 3x3 sobre sus vecinos. Para cada posición se calcula el promedio de los valores de los píxeles en los canales de color. El valor resultante reemplaza al píxel central generando una imagen suavizada.
+Tecnologías utilizadas
+•	Python
+•	OpenCV
+•	NumPy
+•	Microsoft Visual Studio
+Proceso de implementación
+•	Carga de la imagen original
+•	Conversión de la imagen a matriz de píxeles
+•	Recorrido de la imagen con ventana 3x3
+•	Cálculo del promedio de los valores RGB
+•	Generación de la imagen filtrada
+Código del filtro
+import cv2
+import numpy as np
+
+imagen = cv2.imread("imagen.jpg")
+
+alto, ancho, canales = imagen.shape
+
+resultado = np.zeros((alto, ancho, canales), dtype=np.uint8)
+
+for i in range(1, alto-1):
+    for j in range(1, ancho-1):
+        ventana = imagen[i-1:i+2, j-1:j+2]
+        resultado[i, j] = np.mean(ventana, axis=(0,1))
+
+cv2.imwrite("resultado.jpg", resultado)
+Ejecución en Microsoft Visual Studio
+Requisitos
+•	Python instalado
+•	Microsoft Visual Studio instalado
+•	Soporte de Python en Visual Studio
+•	OpenCV instalado
+Instalación de dependencias:
+pip install opencv-python
+Ejecución del programa
+•	Abrir Microsoft Visual Studio
+•	Crear o abrir un proyecto en Python
+•	Agregar el archivo filtro.py
+•	Pegar el código del filtro
+•	Ejecutar el programa desde el botón Run o presionando Ctrl + F5
+Evidencia de ejecución
+Se debe incluir en el informe:
+•	Captura del código abierto en Microsoft Visual Studio
+•	Captura de la ejecución del programa
+•	Imagen original
+•	Imagen procesada con el filtro aplicado
+Resultado esperado
+La imagen resultante presenta reducción de ruido y suavizado en las transiciones de color en comparación con la imagen original.
+
+## Comparación de resultados
+
+Gráfico del filtro aplicado:
+
+![Resultado del filtro](assets/imagenes/filtro.jpg)
 
 ### Cover La Vaca Lola
 
