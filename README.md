@@ -77,7 +77,7 @@ Video final (archivo local en el repositorio)
 vaca/videofinal.mp4
 
 Video final (enlace externo)
-[https://drive.google.com/tu_link_o_video](https://drive.google.com/multimedia/vaca/videofinal.mp4)
+[Video final]([https://drive.google.com/multimedia/vaca/videofinal.mp4](https://drive.google.com/file/d/1wabbNqvF8YZiOZ0aJ4S8B4StalLiVqs_/view?usp=sharing))
 
 ## 5. Informe técnico
 
