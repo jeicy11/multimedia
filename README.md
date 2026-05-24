@@ -115,7 +115,7 @@ La imagen resultante presenta reducción de ruido y suavizado en las transicione
 
 Gráfico del filtro aplicado:
 
-![Resultado del filtro](assets/filtro/resultado.png)
+![Resultado del filtro](https://drive.google.com/uc?id=1rcGw_GA31RI6nGHebnzEZA7lyjdiqNDR)
 
 ### Cover La Vaca Lola
 
