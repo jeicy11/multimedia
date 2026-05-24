@@ -141,11 +141,6 @@ ffmpeg -i video.mp4 -i vacalola.mp3 -c:v copy -c:a copy videofinal.mp4
 
 El resultado es un video multimedia sincronizado entre imagen y audio.
 
-Video final del proyecto
-[https://drive.google.com/tu_link_aqui](https://drive.google.com/tu_link_aqui)
-
-## Ubicación del archivo final
-
 Video final del proyecto La Vaca Lola:  
 [Ver video](https://drive.google.com/file/d/1wabbNqvF8YZiOZ0aJ4S8B4StalLiVqs_/view?usp=sharing)
 
