@@ -8,11 +8,10 @@ Este proyecto integra desarrollo multimedia, procesamiento de imágenes, animaci
 
 * 1_actividades_grupales
 * 2_actividades_individuales
-* 3_productos_esperados
-* 4_informe_tecnico
+* 3_informe_tecnico
 * assets
 
-## 1. Actividades grupales
+## 1. Actividades A y B
 
 ### A. Trámites UMSA (BPM)
 
@@ -41,7 +40,7 @@ Se generó un modelo tridimensional a partir de fotografías reales de un integr
 Ubicación
 1_actividades_grupales/B_desarrollo_3d_vr/fotogrametria_avatar
 
-## 3. Actividades individuales
+## 3. Actividades a, b y c
 
 ### Clasificación de texturas
 
@@ -78,22 +77,14 @@ Video final (archivo local en el repositorio)
 vaca/videofinal.mp4
 
 Video final (enlace externo)
-[https://drive.google.com/tu_link_o_video](https://drive.google.com/tu_link_o_video)
-
-## 4. Productos esperados
-
-Plataforma web funcional
-Incluye formularios dinámicos, visualización de modelos 3D y presentación de resultados del proyecto.
-
-Ubicación
-3_productos_esperados/web_plataforma
+[https://drive.google.com/tu_link_o_video](https://drive.google.com/multimedia/vaca/videofinal.mp4)
 
 ## 5. Informe técnico
 
 El informe incluye metodología utilizada, herramientas y tecnologías empleadas, capturas de pantalla del proceso y comparación visual entre resultados antes y después del procesamiento de imágenes.
 
 Ubicación
-4_informe_tecnico/informe.pdf
+3_informe_tecnico/informe.pdf
 
 ## Resultado final
 
