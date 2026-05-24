@@ -73,8 +73,78 @@ FFmpeg
 Google Colab
 Google Drive
 
-Video final (archivo local en el repositorio)
-vaca/videofinal.mp4
+## Descripción
+
+Este módulo corresponde a la producción multimedia de la canción “La Vaca Lola”. Se realizó procesamiento de video para extracción de frames, reconstrucción del video y sincronización con audio.
+
+## Proceso realizado
+
+* Extracción de frames desde el video original utilizando OpenCV
+* Ordenamiento secuencial de imágenes
+* Reconstrucción del video a partir de frames
+* Sincronización de audio con FFmpeg
+
+## Tecnologías utilizadas
+
+* Python
+* OpenCV
+* FFmpeg
+* Google Colab
+* Google Drive
+
+## Estructura del módulo
+
+vaca/
+
+* baile.mp4 (video original)
+* vacalola.mp3 (audio)
+* frames/ (imágenes extraídas)
+* video.mp4 (video reconstruido)
+* videofinal.mp4 (video final sincronizado)
+
+## Ejecución del proyecto
+
+### Requisitos
+
+* Google Colab
+* Google Drive montado
+* Python con OpenCV instalado
+
+### Pasos de ejecución
+
+1. Montar Google Drive
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+2. Cargar el video original
+
+video = cv2.VideoCapture(archivo)
+
+3. Extraer frames del video
+
+Se recorren los frames del video y se guardan como imágenes en la carpeta frames.
+
+4. Ordenar imágenes
+
+imagenes = sorted(os.listdir(directorio), key=lambda x: int(re.findall(r'\d+', x)[0]))
+
+5. Reconstruir el video desde imágenes
+
+Se utiliza cv2.VideoWriter para unir los frames en un video.
+
+6. Sincronizar audio con video
+
+ffmpeg -i video.mp4 -i vacalola.mp3 -c:v copy -c:a copy videofinal.mp4
+
+## Resultado final
+
+El resultado es un video multimedia sincronizado entre imagen y audio.
+
+Video final del proyecto
+[https://drive.google.com/tu_link_aqui](https://drive.google.com/tu_link_aqui)
+
+## Ubicación del archivo final
 
 Video final del proyecto La Vaca Lola:  
 [Ver video](https://drive.google.com/file/d/1wabbNqvF8YZiOZ0aJ4S8B4StalLiVqs_/view?usp=sharing)
