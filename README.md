@@ -115,7 +115,7 @@ La imagen resultante presenta reducción de ruido y suavizado en las transicione
 
 Gráfico del filtro aplicado:
 
-![Resultado del filtro](assets/imagenes/filtro.jpg)
+![Resultado del filtro](assets/filtro/resultado.png)
 
 ### Cover La Vaca Lola
 
@@ -203,7 +203,8 @@ ffmpeg -i video.mp4 -i vacalola.mp3 -c:v copy -c:a copy videofinal.mp4
 El resultado es un video multimedia sincronizado entre imagen y audio.
 
 Video final del proyecto La Vaca Lola:  
-[Ver video](https://drive.google.com/file/d/1wabbNqvF8YZiOZ0aJ4S8B4StalLiVqs_/view?usp=sharing)
+https://drive.google.com/file/d/1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2/view
+
 
 ## 5. Informe técnico
 
