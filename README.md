@@ -316,19 +316,87 @@ Se incluyen capturas de:
 
 ## 3. Actividades a, b y c
 
-### Clasificación de texturas
+### a) Clasificación de texturas
 
 Se desarrolló un algoritmo para identificar diferentes superficies en imágenes como césped, tierra, cemento y asfalto.
 
-Ubicación
-2_actividades_abc/clasificacion_texturas
+# CLASIFICACIÓN DE TEXTURAS
 
-### Filtro de suavizado
+## Descripción
+
+Este proyecto implementa un algoritmo de procesamiento de imágenes a nivel de píxel utilizando C# y Windows Forms. El objetivo es clasificar regiones de una imagen en diferentes tipos de textura mediante el análisis de bloques de píxeles.
+
+El sistema simula la identificación de superficies como césped, tierra, cemento o asfalto utilizando dominancia de color.
+
+---
+
+## Funcionamiento
+
+El algoritmo divide la imagen en bloques de 15x15 píxeles y calcula el promedio RGB de cada bloque. Luego clasifica cada región según la dominancia de color:
+
+- Rojo dominante → categoría roja
+- Verde dominante → categoría verde
+- Azul dominante → categoría azul
+- Colores similares → escala de grises
+- Otros casos → color promedio del bloque
+
+---
+
+## Tecnologías utilizadas
+
+- C#
+- Windows Forms
+- .NET Framework
+- Visual Studio
+- Bitmap (GDI+)
+- Procesamiento de imágenes
+
+---
+
+## Metodología
+
+El procesamiento se realiza directamente sobre los píxeles de la imagen. Se recorren bloques de la imagen, se calcula el promedio de color y se asigna una categoría visual simplificada.
+
+Este enfoque permite una clasificación básica de texturas similar a técnicas de análisis de imágenes satelitales.
+
+---
+
+## Código principal
+
+El procesamiento se basa en:
+
+- Recorrido por bloques de la imagen
+- Cálculo de promedio RGB
+- Evaluación de dominancia de color
+- Asignación de color final por bloque
+
+---
+
+## Ejecución
+
+1. Abrir el proyecto en Visual Studio
+2. Ejecutar el formulario principal
+3. Cargar una imagen
+4. Presionar “Procesar”
+5. Visualizar el resultado en pantalla
+
+---
+
+## Resultado
+
+El resultado muestra una imagen segmentada por regiones de color que representan diferentes tipos de textura visual.
+
+---
+
+Captura de pantalla: 
+
+## Resultado del procesamiento
+
+![Resultado](https://drive.google.com/uc?id=1A7qwyQEb_MXljzGpUo2bDCaW-sCp-4h-)
+
+### b) Filtro de suavizado
 
 Se implementó un filtro promedio 3x3 para reducir ruido y suavizar imágenes.
-
-Ubicación
-2_actividades_abc/filtro_suavizado
 
 IMPLEMENTACIÓN DE UN FILTRO DE SUAVIZADO
 Descripción
@@ -391,7 +459,7 @@ Gráfico del filtro aplicado:
 
 ![Resultado del filtro](https://drive.google.com/uc?id=1rcGw_GA31RI6nGHebnzEZA7lyjdiqNDR)
 
-### Cover La Vaca Lola
+### c) Cover La Vaca Lola
 
 Este proyecto consiste en la producción multimedia de la canción La Vaca Lola. Se utilizó procesamiento de video para extraer frames del video original, ordenarlos y reconstruir el video. Posteriormente se sincronizó con audio mediante FFmpeg.
 
