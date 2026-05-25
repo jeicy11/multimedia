@@ -186,17 +186,17 @@ Requisitos
 Instalación de dependencias:
 pip install opencv-python
 Ejecución del programa
+
 •	Abrir Microsoft Visual Studio
+
 •	Crear o abrir un proyecto en Python
+
 •	Agregar el archivo filtro.py
+
 •	Pegar el código del filtro
+
 •	Ejecutar el programa desde el botón Run o presionando Ctrl + F5
-Evidencia de ejecución
-Se debe incluir en el informe:
-•	Captura del código abierto en Microsoft Visual Studio
-•	Captura de la ejecución del programa
-•	Imagen original
-•	Imagen procesada con el filtro aplicado
+
 Resultado esperado
 La imagen resultante presenta reducción de ruido y suavizado en las transiciones de color en comparación con la imagen original.
 
