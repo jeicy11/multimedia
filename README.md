@@ -43,7 +43,7 @@ generación de certificados
 flujo de finalización
 
 Diagrama de Flujo:
-![Captura del sistema](assets/capturas/sistema.png)
+https://drive.google.com/uc?id=1PLZ5UyYvvhcVyMDUAe3r4zJVRAv7tRDs
 
 b) Sistema BPM
 Se implementó un sistema de gestión de trámites utilizando PHP y JSON como almacenamiento de datos. El sistema permite agregar, consultar y actualizar trámites. Se ejecuta en entorno local con XAMPP.
