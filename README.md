@@ -6,8 +6,8 @@ Este proyecto integra desarrollo multimedia, procesamiento de imágenes, animaci
 
 ## Estructura del repositorio
 
-* 1_actividades_grupales
-* 2_actividades_individuales
+* 1_actividades_AB
+* 2_actividades_abc
 * 3_informe_tecnico
 * assets
 
@@ -15,14 +15,114 @@ Este proyecto integra desarrollo multimedia, procesamiento de imágenes, animaci
 
 ### A. Trámites UMSA (BPM)
 
+a)  Diagraa de flujo del Modelado del Proceso
+
 Modelado del proceso
+
 Se elaboró un diagrama de flujo que representa el proceso del trámite universitario, identificando entradas, procesos, validaciones y resultados.
 
-Sistema BPM
-Se implementó un sistema de gestión de trámites utilizando PHP y JSON como almacenamiento de datos. El sistema permite agregar, consultar y actualizar trámites. Se ejecuta en entorno local con XAMPP.
+Este proyecto corresponde a un sistema de digitalización de trámites universitarios enfocado en la gestión y emisión de certificados académicos. El sistema automatiza el flujo completo del trámite desde la autenticación del estudiante hasta la generación y entrega del certificado digital.
 
-Ubicación del sistema
-1_actividades_grupales/A_tramites_umsa/bpm_json
+El sistema incluye un diagrama BPM desarrollado con Mermaid Diagram que representa el flujo completo del trámite universitario.
+
+El sistema utiliza archivos JSON para almacenar:
+
+usuarios
+certificados
+inscripciones
+materias
+trámites
+Modelado BPM
+
+El diagrama de flujo del trámite fue desarrollado utilizando Mermaid Diagram y representa:
+
+decisiones
+validaciones
+procesos
+generación de certificados
+flujo de finalización
+
+Diagrama de Flujo:
+![Captura del sistema](assets/capturas/sistema.png)
+
+b) Sistema BPM
+Se implementó un sistema de gestión de trámites utilizando PHP y JSON como almacenamiento de datos. El sistema permite agregar, consultar y actualizar trámites. Se ejecuta en entorno local con XAMPP.
+SISTEMA DE DIGITALIZACIÓN DE TRÁMITES UMSA
+Descripción
+
+Este proyecto corresponde a un sistema de digitalización de trámites universitarios desarrollado utilizando PHP y almacenamiento de datos en archivos JSON. El objetivo es automatizar procesos administrativos universitarios mediante una estructura modular organizada por funcionalidades.
+
+El sistema permite gestionar usuarios, inscripciones, certificados y administración de trámites académicos.
+
+Tecnologías utilizadas
+PHP
+JSON
+HTML
+CSS
+JavaScript
+XAMPP
+Microsoft Visual Studio
+Estructura del proyecto
+assets/
+│
+├── css/
+├── img/
+└── js/
+
+data/
+│
+├── certificados.json
+├── inscripciones.json
+├── materias.json
+├── tramites.json
+└── usuarios.json
+
+includes/
+│
+├── auth.php
+└── funciones.php
+
+modulos/
+│
+├── admin/
+├── certificados/
+├── inscripciones/
+└── usuarios/
+Funcionalidades principales
+Inicio de sesión de usuarios
+Gestión de usuarios
+Registro de inscripciones
+Solicitud de certificados
+Administración de trámites
+Almacenamiento dinámico utilizando archivos JSON
+Instalación
+Instalar XAMPP
+Copiar la carpeta del proyecto dentro de:
+C:\xampp\htdocs\
+Iniciar Apache desde XAMPP
+Ejecución
+
+Abrir el navegador e ingresar:
+
+http://localhost/umsa/
+Estructura modular
+
+El sistema está organizado por módulos independientes:
+
+Admin
+Certificados
+Inscripciones
+Usuarios
+
+Cada módulo contiene sus propias vistas y funcionalidades.
+
+Almacenamiento de datos
+
+El sistema utiliza archivos JSON como mecanismo de almacenamiento dinámico de información evitando el uso de bases de datos tradicionales.
+
+Ubicación del
+
+
 
 ## 2. Desarrollo 3D y realidad virtual
 
