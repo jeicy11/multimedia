@@ -287,7 +287,7 @@ Se obtuvo:
 
 ## Densificación
 
-![Texturización](https://drive.google.com/uc?id=1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll)
+![Imagen](https://drive.google.com/uc?id=1-E0S4-4P6J8B2pRKqrAWnACgSthkDMnO)
 
 ## Texturización
 
