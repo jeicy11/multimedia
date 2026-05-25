@@ -64,31 +64,9 @@ XAMPP
 Microsoft Visual Studio
 Estructura del proyecto
 
-assets/
-│
-├── css/
-├── img/
-└── js/
+---
 
-data/
-│
-├── certificados.json
-├── inscripciones.json
-├── materias.json
-├── tramites.json
-└── usuarios.json
-
-includes/
-│
-├── auth.php
-└── funciones.php
-
-modulos/
-│
-├── admin/
-├── certificados/
-├── inscripciones/
-└── usuarios/
+## Estructura del proyecto
 
 Funcionalidades principales
 
