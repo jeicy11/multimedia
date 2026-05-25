@@ -64,28 +64,37 @@ XAMPP
 Microsoft Visual Studio
 Estructura del proyecto
 
----
 
 ## Estructura del proyecto
+```text
+assets/
+│
+├── css/
+├── img/
+└── js/
 
-Funcionalidades principales
+data/
+│
+├── certificados.json
+├── inscripciones.json
+├── materias.json
+├── tramites.json
+└── usuarios.json
 
-Inicio de sesión de usuarios
-Gestión de usuarios
-Registro de inscripciones
-Solicitud de certificados
-Administración de trámites
-Almacenamiento dinámico utilizando archivos JSON
-Instalación
-Instalar XAMPP
-Copiar la carpeta del proyecto dentro de:
-C:\xampp\htdocs\
-Iniciar Apache desde XAMPP
-Ejecución
+includes/
+│
+├── auth.php
+└── funciones.php
 
-Abrir el navegador e ingresar:
+modulos/
+│
+├── admin/
+├── certificados/
+├── inscripciones/
+└── usuarios/
+```
 
-http://localhost/umsa/
+"http://localhost/umsa/"
 
 Estructura modular
 
