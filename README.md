@@ -63,6 +63,7 @@ JavaScript
 XAMPP
 Microsoft Visual Studio
 Estructura del proyecto
+
 assets/
 │
 ├── css/
@@ -88,7 +89,9 @@ modulos/
 ├── certificados/
 ├── inscripciones/
 └── usuarios/
+
 Funcionalidades principales
+
 Inicio de sesión de usuarios
 Gestión de usuarios
 Registro de inscripciones
@@ -105,6 +108,7 @@ Ejecución
 Abrir el navegador e ingresar:
 
 http://localhost/umsa/
+
 Estructura modular
 
 El sistema está organizado por módulos independientes:
@@ -119,8 +123,6 @@ Cada módulo contiene sus propias vistas y funcionalidades.
 Almacenamiento de datos
 
 El sistema utiliza archivos JSON como mecanismo de almacenamiento dinámico de información evitando el uso de bases de datos tradicionales.
-
-Ubicación del
 
 
 
