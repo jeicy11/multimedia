@@ -280,21 +280,22 @@ Finalmente el modelo fue exportado en formato GLB para su visualización en plat
 El modelo tridimensional generado presenta una reconstrucción visual aceptable considerando las limitaciones de procesamiento por CPU.
 
 Se obtuvo:
-- Nube de puntos reconstruida, triangulización
 
-https://drive.google.com/file/d/1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll/view?usp=drive_link
+## Triangulización
 
-- Densificación
+![Densificación](https://drive.google.com/uc?id=1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll)
 
-https://drive.google.com/file/d/1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll/view?usp=drive_link
+## Densificación
 
-- Texturización
+![Texturización](https://drive.google.com/uc?id=1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll)
 
-https://drive.google.com/file/d/1E5x4lL71AIRvIzWa8yIutTLbREO6tL2w/view?usp=drive_link
+## Texturización
 
-- Visualización interactiva desde navegador
+![Resultado final](https://drive.google.com/uc?id=1E5x4lL71AIRvIzWa8yIutTLbREO6tL2w)
 
 ---
+
+- Visualización interactiva desde navegador
 
 ## Visualización web
 
