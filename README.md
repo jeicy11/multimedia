@@ -225,12 +225,93 @@ Link de la animación, que se subio al sitio itch.io:
 
 [1_actividades_grupales/B_desarrollo_3d_vr/unity_animacion/build_webgl](https://jeycy.itch.io/coreografia)
 
-### B.b) Fotogrametría
+### B.b) Construcción de un Avatar Digital mediante Fotogrametría
 
 Se generó un modelo tridimensional a partir de fotografías reales de un integrante del grupo. El modelo puede visualizarse en una interfaz web.
 
-Ubicación
-1_actividades_grupales/B_desarrollo_3d_vr/fotogrametria_avatar
+# CONSTRUCCIÓN DE AVATAR DIGITAL MEDIANTE FOTOGRAMETRÍA
+
+## Descripción
+
+Este proyecto consiste en la generación de un modelo tridimensional realista utilizando técnicas de fotogrametría digital. El proceso fue desarrollado a partir de fotografías reales capturadas alrededor de una persona y posteriormente reconstruidas mediante software especializado.
+
+El modelo final fue optimizado y publicado en una plataforma web interactiva para su visualización desde navegador.
+
+---
+
+## Metodología utilizada
+
+Inicialmente se capturaron más de 100 fotografías alrededor de la persona desde diferentes ángulos con el objetivo de obtener suficiente información visual para la reconstrucción tridimensional.
+
+Las imágenes fueron procesadas utilizando Regard 3D con configuraciones optimizadas de reconstrucción. Debido al procesamiento realizado mediante CPU, el tiempo de generación del modelo superó las tres horas.
+
+El modelo reconstruido fue exportado en formato PLY y posteriormente importado en Blender para eliminar ruido y geometrías incorrectas generadas durante la reconstrucción.
+
+Finalmente el modelo fue exportado en formato GLB para su visualización en plataformas web compatibles con contenido 3D interactivo.
+
+---
+
+## Herramientas y tecnologías empleadas
+
+- Regard 3D
+- Blender
+- Fotogrametría digital
+- Formato PLY
+- Formato GLB
+- Plataforma web P3D
+- GitHub
+
+---
+
+## Proceso realizado
+
+- Captura de fotografías alrededor de la persona
+- Reconstrucción de nube de puntos
+- Generación de superficie 3D
+- Exportación del modelo en formato PLY
+- Limpieza y optimización en Blender
+- Exportación final en formato GLB
+- Publicación web interactiva
+
+---
+
+## Resultados obtenidos
+
+El modelo tridimensional generado presenta una reconstrucción visual aceptable considerando las limitaciones de procesamiento por CPU.
+
+Se obtuvo:
+- Nube de puntos reconstruida, triangulización
+
+https://drive.google.com/file/d/1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll/view?usp=drive_link
+
+- Densificación
+
+https://drive.google.com/file/d/1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll/view?usp=drive_link
+
+- Texturización
+
+https://drive.google.com/file/d/1E5x4lL71AIRvIzWa8yIutTLbREO6tL2w/view?usp=drive_link
+
+- Visualización interactiva desde navegador
+
+---
+
+## Visualización web
+
+Modelo interactivo:
+https://p3d.in/q4KG1
+
+---
+
+## Capturas del proyecto
+
+Se incluyen capturas de:
+- Procesamiento en Regard 3D
+- Reconstrucción de nube de puntos
+- Edición del modelo en Blender
+- Resultado final publicado
+
+---
 
 ## 3. Actividades a, b y c
 
