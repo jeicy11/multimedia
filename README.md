@@ -113,16 +113,119 @@ El sistema utiliza archivos JSON como mecanismo de almacenamiento dinámico de i
 
 
 
-## 2. Desarrollo 3D y realidad virtual
+## B. Desarrollo 3D y realidad virtual
 
-### Animación en Unity
+### B.a) Animación sincronizada en Unity
 
 Se desarrolló una animación sincronizada con música exportada en formato WebGL para ejecución en navegador.
 
-Ubicación
-1_actividades_grupales/B_desarrollo_3d_vr/unity_animacion/build_webgl
+# ANIMACIÓN SINCRONIZADA EN UNITY
 
-### Fotogrametría
+## Descripción
+
+Este proyecto consiste en el desarrollo de una escena 3D en Unity donde múltiples personajes realizan una coreografía sincronizada con música. El objetivo fue implementar animaciones coordinadas utilizando el sistema Animator de Unity y exportar el proyecto en formato WebGL para ejecución desde navegador web.
+
+---
+
+## Características principales
+
+- Escena 3D interactiva
+- Múltiples personajes sincronizados
+- Coreografía grupal animada
+- Música sincronizada con animaciones
+- Exportación WebGL
+- Ejecución desde navegador
+
+---
+
+## Tecnologías utilizadas
+
+- Unity 6
+- C#
+- Animator Controller
+- Mecanim Animation System
+- Audio Source
+- WebGL
+- Microsoft Visual Studio
+- GitHub
+
+---
+
+## Metodología utilizada
+
+El proyecto fue desarrollado utilizando modelos humanoides importados en Unity. Se configuró un Animator Controller para controlar las secuencias de baile y sincronizar los movimientos de todos los personajes.
+
+La música fue integrada mediante Audio Source sincronizando reproducción y animación. Posteriormente se configuró la iluminación, cámara y escenario de la escena 3D.
+
+Finalmente el proyecto fue exportado en formato WebGL para visualización en navegador.
+
+---
+
+## Estructura del proyecto
+
+```text
+Assets/
+│
+├── Animations/
+├── Audio/
+├── Materials/
+├── Models/
+├── Prefabs/
+├── Scenes/
+├── Scripts/
+└── WebGLBuild/
+```
+
+---
+
+## Ejecución del proyecto
+
+### Requisitos
+
+- Unity 6
+- Navegador web compatible con WebGL
+
+---
+
+## Ejecución en Unity
+
+1. Abrir el proyecto en Unity
+2. Cargar la escena principal
+3. Presionar Play para ejecutar la animación
+
+---
+
+## Exportación WebGL
+
+1. Abrir File > Build Settings
+2. Seleccionar WebGL
+3. Presionar Build
+4. Abrir index.html generado
+
+---
+
+## Resultado obtenido
+
+El resultado final consiste en una escena 3D donde varios personajes ejecutan una coreografía sincronizada con música en tiempo real.
+
+---
+
+## Capturas del proyecto
+
+Se incluyen capturas de:
+- Escena principal
+- Animator Controller
+- Personajes sincronizados
+- Resultado WebGL
+
+---
+
+Link de la animación, que se subio al sitio itch.io:
+
+
+[1_actividades_grupales/B_desarrollo_3d_vr/unity_animacion/build_webgl](https://jeycy.itch.io/coreografia)
+
+### B.b) Fotogrametría
 
 Se generó un modelo tridimensional a partir de fotografías reales de un integrante del grupo. El modelo puede visualizarse en una interfaz web.
 
