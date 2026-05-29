@@ -8,7 +8,7 @@ Este proyecto integra desarrollo multimedia, procesamiento de imágenes, animaci
 
 * 1_actividades_AB
 * 2_actividades_abc
-* 3_informe_tecnico
+* 3_informe
 * assets
 
 ## 1. Actividades A y B
@@ -43,7 +43,8 @@ generación de certificados
 flujo de finalización
 
 Diagrama de Flujo:
-https://drive.google.com/uc?id=1PLZ5UyYvvhcVyMDUAe3r4zJVRAv7tRDs
+
+https://drive.google.com/file/d/1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj/view?usp=drive_link
 
 b) Sistema BPM
 Se implementó un sistema de gestión de trámites utilizando PHP y JSON como almacenamiento de datos. El sistema permite agregar, consultar y actualizar trámites. Se ejecuta en entorno local con XAMPP.
