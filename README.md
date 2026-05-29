@@ -19,41 +19,56 @@ a)  Diagraa de flujo del Modelado del Proceso
 
 Modelado del proceso
 
-Se elaboró un diagrama de flujo que representa el proceso del trámite universitario, identificando entradas, procesos, validaciones y resultados.
+1. Metodología utilizada
 
-Este proyecto corresponde a un sistema de digitalización de trámites universitarios enfocado en la gestión y emisión de certificados académicos. El sistema automatiza el flujo completo del trámite desde la autenticación del estudiante hasta la generación y entrega del certificado digital.
+Modelado del Proceso
 
-El sistema incluye un diagrama BPM desarrollado con Mermaid Diagram que representa el flujo completo del trámite universitario.
+Para el desarrollo del proyecto se realizó el modelado de procesos utilizando diagramas de flujo BPM (Business Process Management), con el objetivo de representar gráficamente el funcionamiento completo de los trámites universitarios digitalizados dentro de la Carrera de Informática de la UMSA.
 
-El sistema utiliza archivos JSON para almacenar:
+El sistema implementa dos workflows principales:
 
-usuarios
-certificados
-inscripciones
-materias
-trámites
-Modelado BPM
+* F1: Inscripción de Materias.
+* F2: Emisión de Certificados.
 
-El diagrama de flujo del trámite fue desarrollado utilizando Mermaid Diagram y representa:
+Cada flujo fue estructurado identificando claramente:
 
-decisiones
-validaciones
-procesos
-generación de certificados
-flujo de finalización
+* Entradas del sistema.
+* Procesos administrativos.
+* Validaciones académicas.
+* Roles responsables.
+* Resultados finales.
 
-Diagrama de Flujo:
+En el Flujo F1 — Inscripción de Materias, el proceso inicia con la solicitud realizada por el estudiante. Posteriormente, Kardex verifica el requisito académico y valido la información correspondiente. Luego, Director 1 y Director 2 realizan las revisiones y aprobaciones necesarias. Finalmente, Kardex registra oficialmente la inscripción y el estudiante recibe el resultado final del trámite.
 
-https://drive.google.com/file/d/1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj/view?usp=drive_link
+En el Flujo F2 — Emisión de Certificados, el estudiante solicita un certificado académico. Kardex verifica los datos del historial académico y posteriormente el trámite pasa por las etapas de revisión y aprobación de Director 1 y Director 2. Luego, Caja registra el pago correspondiente y finalmente Kardex genera el certificado digital para que el estudiante pueda descargarlo.
 
-b) Sistema BPM
-Se implementó un sistema de gestión de trámites utilizando PHP y JSON como almacenamiento de datos. El sistema permite agregar, consultar y actualizar trámites. Se ejecuta en entorno local con XAMPP.
-SISTEMA DE DIGITALIZACIÓN DE TRÁMITES UMSA
-Descripción
+Los diagramas BPM permitieron representar de manera clara el recorrido completo de cada trámite, facilitando la automatización del workflow y permitiendo identificar fácilmente las tareas pendientes, validaciones y responsables en cada etapa del proceso.
 
-Este proyecto corresponde a un sistema de digitalización de trámites universitarios desarrollado utilizando PHP y almacenamiento de datos en archivos JSON. El objetivo es automatizar procesos administrativos universitarios mediante una estructura modular organizada por funcionalidades.
+Este modelado sirvió como base para la implementación del motor workflow desarrollado en PHP y JSON, permitiendo automatizar los trámites universitarios y reducir significativamente los procesos manuales realizados en papel.
 
-El sistema permite gestionar usuarios, inscripciones, certificados y administración de trámites académicos.
+El proyecto implementa diagramas BPM (Business Process Management) para representar el funcionamiento completo de los trámites universitarios digitalizados.
+
+Los diagramas muestran:
+
+* Entradas del sistema.
+* Procesos administrativos.
+* Validaciones.
+* Roles responsables.
+* Resultados finales.
+
+Se desarrollaron dos workflows principales:
+
+F1 — Inscripción de Materias
+Flujo:
+
+Estudiante → Kardex → Director 1 → Director 2 → Kardex → Estudiante
+
+F2 — Emisión de Certificados
+
+Flujo:
+
+Estudiante → Kardex → Director 1 → Director 2 → Caja → Kardex → Estudiante
+Los diagramas BPM sirvieron como base para implementar el motor workflow dinámico desarrollado en PHP y JSON, permitiendo automatizar la asignación de tareas y el avance automático de los trámites universitarios.
 
 Tecnologías utilizadas
 PHP
@@ -67,32 +82,63 @@ Estructura del proyecto
 
 
 ## Estructura del proyecto
-```text
-assets/
-│
-├── css/
-├── img/
-└── js/
 
-data/
+```bash
+C:\XAMPP\HTDOCS\PROYECTOUMSADOS
+│   bandeja.php
+│   index.php
+│   login.php
+│   logout.php
+│   nuevo_tramite.php
+│   workflow.php
 │
-├── certificados.json
-├── inscripciones.json
-├── materias.json
-├── tramites.json
-└── usuarios.json
+├───controlador
+│       workflow.php
+│
+├───json
+│       flujocondicionante.json
+│       flujoproceso.json
+│       seguimiento.json
+│       usuarios.json
+│
+└───pantallas
+        aprobacion_director2.php
+        aprobacion_final.php
+        descargar_certificado.php
+        generar_certificado.php
+        mostrar_resultado.php
+        pago_certificado.php
+        registrar_inscripcion.php
+        revision_certificado.php
+        revision_director1.php
+        solicitar_certificado.php
+        solicitar_inscripcion.php
+        validar_datos.php
+        validar_requisitos.php
+        verificar_datos.php
+```
 
-includes/
-│
-├── auth.php
-└── funciones.php
 
-modulos/
-│
-├── admin/
-├── certificados/
-├── inscripciones/
-└── usuarios/
+
+## 📁 Archivo del Proyecto
+
+🔗 [Ver archivo en Google Drive](https://drive.google.com/file/d/1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj/view?usp=drive_link)
+
+---
+
+## 🚀 Descripción
+
+Sistema de gestión de trámites desarrollado en PHP utilizando XAMPP y archivos JSON para el manejo de procesos, usuarios y seguimiento de flujos.
+
+## 🛠 Tecnologías Utilizadas
+
+* PHP
+* HTML/CSS
+* JSON
+* XAMPP
+* GitHub
+
+```
 ```
 
 "http://localhost/umsa/"
