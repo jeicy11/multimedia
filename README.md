@@ -15,11 +15,11 @@ Este proyecto integra desarrollo multimedia, procesamiento de imágenes, animaci
 
 ### A. Trámites UMSA (BPM)
 
-a)  Diagraa de flujo del Modelado del Proceso
+###A.a)  Diagraa de flujo del Modelado del Proceso
 
 Modelado del proceso
 
-1. Metodología utilizada
+###1. Metodología utilizada
 
 Modelado del Proceso
 
@@ -71,7 +71,8 @@ Estudiante → Kardex → Director 1 → Director 2 → Caja → Kardex → Estu
 
 Los diagramas BPM sirvieron como base para implementar el motor workflow dinámico desarrollado en PHP y JSON, permitiendo automatizar la asignación de tareas y el avance automático de los trámites universitarios.
 
-Tecnologías utilizadas
+Herramientas y tecnologías utilizadas
+
 PHP
 JSON
 HTML
@@ -81,6 +82,14 @@ XAMPP
 Microsoft Visual Studio
 Estructura del proyecto
 
+---
+## Diagrama de flujo
+
+![Gráfico](https://drive.google.com/uc?export=view&id=1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj)
+
+---
+
+###A.b) BPM
 
 ## Estructura del proyecto
 
@@ -120,24 +129,84 @@ C:\XAMPP\HTDOCS\PROYECTOUMSADOS
 ```
 
 
-
-## Diagrama de flujo
-
-![Gráfico](https://drive.google.com/uc?export=view&id=1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj)
-
----
-
 ## 🚀 Descripción
 
 Sistema de gestión de trámites desarrollado en PHP utilizando XAMPP y archivos JSON para el manejo de procesos, usuarios y seguimiento de flujos.
 
+1. Metodología Utilizada
+Para el desarrollo del sistema se utilizó una metodología incremental orientada a procesos BPM (Business Process Management), permitiendo modelar y automatizar los trámites universitarios mediante workflows digitales.
+El trabajo se realizó en las siguientes etapas:
+
+a) Análisis del Problema
+
+Se identificaron los trámites universitarios más comunes dentro de la Carrera de Informática de la UMSA:
+
+- Inscripción de materias.
+- Emisión de certificados.
+
+Posteriormente se analizaron los roles involucrados, documentos requeridos y secuencia de aprobación administrativa.
+
+b) Modelado de Procesos
+Se diseñaron diagramas de flujo BPM para representar:
+
+- entradas,
+- validaciones,
+- procesos,
+- responsables,
+- resultados finales.
+
+Cada flujo fue dividido en procesos P1, P2, P3, etc., asignando un rol específico a cada etapa.
+
+c) Diseño del Workflow
+
+Se implementó un motor workflow dinámico basado en:
+
+- flujos,
+- procesos,
+- roles,
+- transición automática entre tareas.
+
+El sistema permite que al finalizar un proceso se genere automáticamente la siguiente tarea para el siguiente responsable.
+
+d) Implementación
+
+Se desarrolló un sistema web usando PHP y almacenamiento en archivos JSON, evitando el uso de bases de datos tradicionales.
+
+El sistema incluye:
+
+- autenticación,
+- bandeja de tareas,
+- control de procesos,
+- seguimiento de trámites,
+- gestión dinámica de workflows.
+
+e) Pruebas
+
+Se realizaron pruebas completas de los dos flujos:
+
+Flujo F1: Inscripción de materias.
+Flujo F2: Emisión de certificados.
+
+Verificando:
+
+- asignación automática,
+- cierre de tareas,
+- cambio de responsable,
+- finalización del workflow.
+
+
 ## 🛠 Tecnologías Utilizadas
 
-* PHP
-* HTML/CSS
-* JSON
-* XAMPP
-* GitHub
+Lenguajes de Programación
+- PHP
+- HTML5
+- CSS
+- Herramientas de Desarrollo
+- Visual Studio Code
+- XAMPP
+- Navegador Google Chrome
+- PHP
+
 
 ```
 ```
