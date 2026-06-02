@@ -15,11 +15,11 @@ Este proyecto integra desarrollo multimedia, procesamiento de imágenes, animaci
 
 ### A. Trámites UMSA (BPM)
 
-###A.a)  Diagraa de flujo del Modelado del Proceso
+### A.a)  Diagraa de flujo del Modelado del Proceso
 
 Modelado del proceso
 
-###1. Metodología utilizada
+### 1. Metodología utilizada
 
 Modelado del Proceso
 
@@ -211,7 +211,7 @@ Lenguajes de Programación
 ```
 ```
 
-"http://localhost/umsa/"
+Directorio donde debes copiar los documentos: http://localhost/umsa/
 
 Estructura modular
 
