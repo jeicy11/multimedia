@@ -68,6 +68,7 @@ F2 — Emisión de Certificados
 Flujo:
 
 Estudiante → Kardex → Director 1 → Director 2 → Caja → Kardex → Estudiante
+
 Los diagramas BPM sirvieron como base para implementar el motor workflow dinámico desarrollado en PHP y JSON, permitiendo automatizar la asignación de tareas y el avance automático de los trámites universitarios.
 
 Tecnologías utilizadas
