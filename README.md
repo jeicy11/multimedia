@@ -154,9 +154,13 @@ Cada flujo lo representamos en 4 tablas:
 2.	flujoCondicion
 3.	seguimiento
 4.	usuarios
+
 La tabla usuarios es compartida por ambos flujos, mientras que las otras tres pueden filtrarse por flujo.
+
 FLUJO F1: INSCRIPCIÓN
+
 Tabla flujoProceso (F1)
+
 flujo	proceso	procesoSiguiente	tipo	rol	pantalla
 F1	P1	P2	I	estudiante	solicitar_inscripcion.php
 F1	P2	P3	P	kardex	validar_requisitos.php
@@ -164,7 +168,9 @@ F1	P3	P4	P	director1	revision_director1.php
 F1	P4	P5	C	director2	aprobacion_director2.php
 F1	P5	P6	P	kardex	registrar_inscripcion.php
 F1	P6	NULL	F	estudiante	mostrar_resultado.php
+
 Tabla flujoCondicion (F1)
+
 flujo	proceso	procesoSI	procesoNO
 F1	P4	P5	P1
 Interpretación:
