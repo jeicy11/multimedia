@@ -121,9 +121,9 @@ C:\XAMPP\HTDOCS\PROYECTOUMSADOS
 
 
 
-## 📁 Archivo del Proyecto
+## Diagrama de flujo
 
-🔗 [Ver archivo en Google Drive](https://drive.google.com/file/d/1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj/view?usp=drive_link)
+![Gráfico](https://drive.google.com/uc?export=view&id=1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj)
 
 ---
 
