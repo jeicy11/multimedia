@@ -229,6 +229,106 @@ Almacenamiento de datos
 El sistema utiliza archivos JSON como mecanismo de almacenamiento dinámico de información evitando el uso de bases de datos tradicionales.
 
 
+## Capturas de Pantalla
+
+![Gráfico](https://drive.google.com/uc?export=view&id=1nR95-qcEX_gaVqMmSv7hOmQuwVWgapqj)
+
+
+# FLUJO 1. INSCRIPCION
+
+
+Estudiante
+
+![Imagen 2](https://drive.google.com/uc?export=view&id=1yHAz88UsLtgKNRyc-raMO0TfKOjathl5)
+
+![Imagen 3](https://drive.google.com/uc?export=view&id=1U8gSHbtZcKRkSn3dOl8Gveb5PqGHimEy)
+
+![Imagen 4](https://drive.google.com/uc?export=view&id=1vYD2xqo8b4ZJoSBSfElt64jJYZ6ijI9S)
+
+
+Kardex
+
+![Imagen 5](https://drive.google.com/uc?export=view&id=1kMwHJCis_P-kfapmv3krhUcQOTM57Hsh)
+
+![Imagen 6](https://drive.google.com/uc?export=view&id=1D19okq_nWE7vj4-otfc_ZM4a5VKoRAt4)
+
+
+Director 1
+
+![Imagen 7](https://drive.google.com/uc?export=view&id=1FPU-9jdA_ksa1aV2U1-NQID2r4uyCuRR)
+
+![Imagen 8](https://drive.google.com/uc?export=view&id=1Jcc7gxP2upLyZCtBTt_6f3_wCUF0QXbf)
+
+
+Director 2
+
+![Imagen 9](https://drive.google.com/uc?export=view&id=1o2hLE31_rXotYlQ2UAoeuGIB6CLtrRe2)
+
+![Imagen 10](https://drive.google.com/uc?export=view&id=1bHnNm4UJihAjwIsCyfv0D_Ib4y3p0jjm)
+ 
+
+Kardex
+
+![Imagen 11](https://drive.google.com/uc?export=view&id=1ARnyxEmgfwiTsViuo7KVOBLTPsNjlBUr)
+
+![Imagen 12](https://drive.google.com/uc?export=view&id=1mAa7oat_rvrSWKciw1k8IPgaPmjm-4ci)
+
+![Imagen 13](https://drive.google.com/uc?export=view&id=1_nE-Cv6S2V7zRpSTuvJuKBOtTNO88Nv1)
+
+![Imagen 14](https://drive.google.com/uc?export=view&id=1X0kgEygbV0fqOJ28ChAOG4dmlTczxVT-)
+
+![Imagen 15](https://drive.google.com/uc?export=view&id=1TOKcsY3nn1ahQrrqa071_M6R4Eio4q0n)
+
+
+# FLUJO 2. CERTIFICADOS
+
+
+Estudiante
+
+![Imagen 16](https://drive.google.com/uc?export=view&id=17VBuKX9wIdtfAjD7PWa1gi_9knMrrPz-)
+
+![Imagen 17](https://drive.google.com/uc?export=view&id=18OdKXfMy-KHxJHr7vfzQGQF3CAE97hq6)
+
+
+Kardex
+
+![Imagen 18](https://drive.google.com/uc?export=view&id=1QnNEVPC2xjLvmhjk1TfxIL_-QmwfuHkt)
+
+![Imagen 19](https://drive.google.com/uc?export=view&id=1MLO7BLPn5JFYiyIKdWrg3dg23cE3-Eyb)
+
+
+Director 1
+
+![Imagen 20](https://drive.google.com/uc?export=view&id=1jLGiGpLuOrtd6wgW0UwxuSaPAU603GnG)
+
+
+Director 2
+
+![Imagen 21](https://drive.google.com/uc?export=view&id=17xSVJnvTMk0FQ3ssnvkxMkBOrACU188K)
+
+![Imagen 22](https://drive.google.com/uc?export=view&id=1w3XE-pruH4b3CtI1H0nid3qBk0viqC_k)
+
+ 
+Caja
+
+![Imagen 23](https://drive.google.com/uc?export=view&id=16DSa1Zkz-Q7YPxpFD7GBVEoaZd0gPpoE)
+
+![Imagen 24](https://drive.google.com/uc?export=view&id=1QxCk3r8c5Quk2Hp5ZytIa25q12NCYOc4)
+
+
+Kardex
+ 
+![Imagen 25](https://drive.google.com/uc?export=view&id=1UloyO05GzrsuZGMcjp_FRwpE07Ok315t)
+
+![Imagen 26](https://drive.google.com/uc?export=view&id=1jPJOx2QjDVpFDUMOuFy6IN3rOgzraxox)
+
+
+Estudiante
+
+![Imagen 27](https://drive.google.com/uc?export=view&id=1cmPeqiTfwzv4lX1i3i2-hvt7svxT6ii_)
+
+![Imagen 28](https://drive.google.com/uc?export=view&id=16h-8AjNj8k4auPANToAOT6VUqShFCKvC)
+
 
 ## B. Desarrollo 3D y realidad virtual
 
