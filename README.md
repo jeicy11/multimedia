@@ -365,9 +365,9 @@ Se incluyen capturas de:
 
 ### a) Clasificación de texturas
 
-Se desarrolló un algoritmo para identificar diferentes superficies en imágenes como césped, tierra, cemento y asfalto.
+Se desarrolló un algoritmo para identificar diferentes superficies en imágenes como césped, tierra, cemento, asfalto, etc.
 
-# CLASIFICACIÓN DE TEXTURAS
+[# CLASIFICACIÓN DE TEXTURAS
 
 ## Descripción
 
@@ -479,23 +479,23 @@ for i in range(1, alto-1):
 cv2.imwrite("resultado.jpg", resultado)
 Ejecución en Microsoft Visual Studio
 Requisitos
-•	Python instalado
-•	Microsoft Visual Studio instalado
-•	Soporte de Python en Visual Studio
-•	OpenCV instalado
+• Python instalado
+• Microsoft Visual Studio instalado
+• Soporte de Python en Visual Studio
+• OpenCV instalado
 Instalación de dependencias:
 pip install opencv-python
 Ejecución del programa
 
-•	Abrir Microsoft Visual Studio
+• Abrir Microsoft Visual Studio
 
-•	Crear o abrir un proyecto en Python
+• Crear o abrir un proyecto en Python
 
-•	Agregar el archivo filtro.py
+• Agregar el archivo filtro.py
 
-•	Pegar el código del filtro
+• Pegar el código del filtro
 
-•	Ejecutar el programa desde el botón Run o presionando Ctrl + F5
+• Ejecutar el programa desde el botón Run o presionando Ctrl + F5
 
 Resultado esperado
 La imagen resultante presenta reducción de ruido y suavizado en las transiciones de color en comparación con la imagen original.
