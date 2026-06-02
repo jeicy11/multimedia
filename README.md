@@ -544,6 +544,7 @@ Link de la animación, que se subio al sitio itch.io:
 
 [1_actividades_grupales/B_desarrollo_3d_vr/unity_animacion/build_webgl](https://jeycy.itch.io/coreografia)
 
+
 ### B.b) Construcción de un Avatar Digital mediante Fotogrametría
 
 Se generó un modelo tridimensional a partir de fotografías reales de un integrante del grupo. El modelo puede visualizarse en una interfaz web.
@@ -619,6 +620,7 @@ Se obtuvo:
 ## Visualización web
 
 Modelo interactivo:
+
 https://p3d.in/q4KG1
 
 ---
