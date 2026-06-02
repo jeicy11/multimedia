@@ -146,6 +146,108 @@ Se identificaron los trámites universitarios más comunes dentro de la Carrera 
 
 Posteriormente se analizaron los roles involucrados, documentos requeridos y secuencia de aprobación administrativa.
 
+Flujos:
+•	F1: Inscripción
+•	F2: Trámite de Certificados
+Cada flujo lo representamos en 4 tablas:
+1.	flujoProceso
+2.	flujoCondicion
+3.	seguimiento
+4.	usuarios
+La tabla usuarios es compartida por ambos flujos, mientras que las otras tres pueden filtrarse por flujo.
+FLUJO F1: INSCRIPCIÓN
+Tabla flujoProceso (F1)
+flujo	proceso	procesoSiguiente	tipo	rol	pantalla
+F1	P1	P2	I	estudiante	solicitar_inscripcion.php
+F1	P2	P3	P	kardex	validar_requisitos.php
+F1	P3	P4	P	director1	revision_director1.php
+F1	P4	P5	C	director2	aprobacion_director2.php
+F1	P5	P6	P	kardex	registrar_inscripcion.php
+F1	P6	NULL	F	estudiante	mostrar_resultado.php
+Tabla flujoCondicion (F1)
+flujo	proceso	procesoSI	procesoNO
+F1	P4	P5	P1
+Interpretación:
+•	Si Director2 aprueba → continúa a P5.
+•	Si Director2 rechaza → vuelve a P1.
+Tabla seguimiento (F1)
+ticket	proceso	usuario	fechaInicio	fechaFin
+1001	P1	juan	08:00	08:10
+1001	P2	kardex1	08:10	08:12
+1001	P3	director1	08:12	08:12
+1001	P4	director2	08:12	08:13
+1001	P5	kardex1	08:13	08:15
+1001	P6	juan	08:15	08:15
+Otro trámite:
+ticket	proceso	usuario
+1002	P1	juan
+1002	P2	kardex1
+1002	P3	director1
+(Actualmente pendiente en P3)
+Tabla usuarios
+usuario	Nombre	rol
+juan	Juan Pérez	estudiante
+kardex1	María Choque	kardex
+director1	Carlos Flores	director1
+director2	Ana Mendoza	director2
+caja1	Luis Vargas	caja
+FLUJO F2: CERTIFICADOS
+Tabla flujoProceso (F2)
+flujo	proceso	procesoSiguiente	tipo	rol	pantalla
+F2	P1	P2	I	estudiante	solicitar_certificado.php
+F2	P2	P3	P	kardex	verificar_datos.php
+F2	P3	P4	P	director1	revision_certificado.php
+F2	P4	P5	C	director2	aprobacion_final.php
+F2	P5	P6	P	caja	pago_certificado.php
+F2	P6	P7	P	kardex	generar_certificado.php
+F2	P7	NULL	F	estudiante	descargar_certificado.php
+Tabla flujoCondicion (F2)
+flujo	proceso	procesoSI	procesoNO
+F2	P4	P5	P1
+Interpretación:
+•	Si Director2 aprueba → continúa al pago.
+•	Si Director2 rechaza → vuelve al inicio.
+Tabla seguimiento (F2)
+Ticket completado:
+ticket	proceso	usuario
+1003	P1	Juan
+1003	P2	kardex1
+1003	P3	director1
+1003	P4	director2
+1003	P5	caja1
+1003	P6	kardex1
+1003	P7	Juan
+Otro trámite:
+ticket	proceso	usuario
+1006	P1	Juan
+P2	kardex1	
+P3	director1	
+P4	director2	
+P5	caja1	
+P6	kardex1	
+P7	juan	
+Tabla usuarios (compartida)
+usuario	nombre	rol
+juan	Juan Pérez	estudiante
+kardex1	María Choque	kardex
+director1	Carlos Flores	director1
+director2	Ana Mendoza	director2
+caja1	Luis Vargas	caja
+Diagrama resumido
+Flujo F1 (Inscripción)
+P1 → P2 → P3 → P4 ? → P5 → P6
+                |
+                NO
+                ↓
+                P1
+Flujo F2 (Certificados)
+P1 → P2 → P3 → P4 ? → P5 → P6 → P7
+                |
+                NO
+                ↓
+                P1
+
+
 b) Modelado de Procesos
 Se diseñaron diagramas de flujo BPM para representar:
 
