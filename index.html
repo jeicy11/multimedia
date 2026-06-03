@@ -746,7 +746,7 @@
                     </ul>
                     <div class="image-grid">
                         <img src="https://via.placeholder.com/280x180/0a2a5e/white?text=Login+Sistema" alt="Login" class="image-preview" style="width:260px;">
-                        <img src="https://via.placeholder.com/280x180/1a4a8a/white?text=Bandeja+Tareas" alt="Bandeja" class="image-preview" style="width:260px;">
+                        <img src="https://via.placeholder.com/280x180/1a4a8a/white?text=Password" alt="Password" class="image-preview" style="width:260px;">
                     </div>
                 </div>
                 <div class="card">
@@ -795,20 +795,71 @@
                 </ul>
                 <div class="tech-tags">
                     <span>Unity 6</span><span>C#</span><span>Animator Controller</span><span>Mecanim</span><span>Audio Source</span><span>WebGL</span>
-                </div>
-                <h4>Estructura del proyecto</h4>
-                <div class="code-block">Assets/ → Animations/ | Audio/ | Materials/ | Models/ | Prefabs/ | Scenes/ | Scripts/ | WebGLBuild/</div>
-                <div class="media-frame">
-                    <iframe src="https://jeycy.itch.io/coreografia" allowfullscreen style="border:none; width:100%; height:300px;" title="Unity WebGL"></iframe>
-                </div>
-                <!-- <p><strong>Link:</strong>https://jeycy.itch.io/coreografia</p> -->
-                <!-- <p><strong>Link:</strong><a href="https://jeycy.itch.io/coreografia" target="_blank"></a></p> -->
 
-                <!-- <a href="https://jeycy.itch.io/coreografia" target="_blank"></a> -->
-                     <strong>Link:</strong>
-                <a href="https://jeycy.itch.io/coreografia" target="_blank">
-                    https://jeycy.itch.io/coreografia
-                </a>
+
+
+                <h4>Estructura del proyecto</h4>
+
+                <div class="code-block">
+                Assets/ → Animations/ | Audio/ | Materials/ | Models/ | Prefabs/ | Scenes/ | Scripts/ | WebGLBuild/
+                </div>
+
+                
+                
+
+                    <div 
+                        style="
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            margin-top:30px;
+                            width:100%;
+                        ">
+
+                        <iframe 
+                            frameborder="0" 
+                            src="https://itch.io/embed/4583728"
+                            width="900"
+                            height="220"
+                            style="
+                                border:none;
+                                border-radius:20px;
+                                overflow:hidden;
+                                box-shadow:0 10px 30px rgba(0,0,0,0.2);
+                                max-width:100%;
+                            ">
+
+                            <a href="https://jeycy.itch.io/coreografia">
+                                coreografia by jeycy
+                            </a>
+
+                        </iframe>
+
+                    </div>
+
+
+
+                <!-- <div style="margin-top:15px; text-align:center;">
+
+                    <strong>Link:</strong><br>
+
+                    <a 
+                        href="https://jeycy.itch.io/coreografia"
+                        target="_blank"
+                        style="
+                            color:#3498db;
+                            text-decoration:none;
+                            font-weight:600;
+                        ">
+
+                        https://jeycy.itch.io/coreografia
+
+                    </a>
+
+                </div> -->
+
+
+
             </div>
 
             <!-- B.b) Avatar -->
@@ -845,19 +896,115 @@
 
             <!-- a) Clasificación de texturas -->
             <h3 class="section-subtitle"><i class="fas fa-th"></i> a) Clasificación de texturas</h3>
+
+
+
             <div class="card">
+
                 <h3>CLASIFICACIÓN DE TEXTURAS</h3>
-                <p>Algoritmo en <strong>C# y Windows Forms</strong> que clasifica regiones en tipos de textura (césped, tierra, cemento, asfalto) mediante bloques de <strong>15x15 píxeles</strong> y dominancia de color RGB.</p>
-                <div class="tech-tags"><span>C#</span><span>.NET Framework</span><span>GDI+</span><span>Bitmap</span></div>
-                <h4>Funcionamiento</h4>
+
+                <p>
+                    Algoritmo desarrollado en <strong>C# y Windows Forms</strong> 
+                    para clasificar superficies mediante análisis RGB por bloques 
+                    de <strong>15x15 píxeles</strong>, identificando diferentes 
+                    tipos de cobertura y textura en imágenes digitales.
+                </p>
+
+                <div class="tech-tags">
+                    <span>C#</span>
+                    <span>.NET Framework</span>
+                    <span>GDI+</span>
+                    <span>Bitmap</span>
+                </div>
+
+                <h4>Referencias de Clasificación</h4>
+
                 <ul class="feature-list">
-                    <li><i class="fas fa-square" style="color:red;"></i> Rojo dominante → categoría roja</li>
-                    <li><i class="fas fa-square" style="color:green;"></i> Verde dominante → categoría verde</li>
-                    <li><i class="fas fa-square" style="color:blue;"></i> Azul dominante → categoría azul</li>
-                    <li><i class="fas fa-square" style="color:gray;"></i> Colores similares → escala de grises</li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:green;"></i>
+                        Vegetación → Verde
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:blue;"></i>
+                        Agua → Azul
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:brown;"></i>
+                        Tierra → Marrón
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:gray;"></i>
+                        Zona urbana → Gris
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:black;"></i>
+                        Asfalto o sombras → Negro
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:#ecf0f1;"></i>
+                        Nubes o nieve → Blanco
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:gold;"></i>
+                        Zonas secas → Amarillo
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:orange;"></i>
+                        Construcción o arcilla → Naranja
+                    </li>
+
                 </ul>
-                <img src="https://via.placeholder.com/500x200/2ecc71/white?text=Resultado+Clasificacion+Texturas" alt="Texturas" class="image-preview" style="width:100%; max-width:500px;">
+
+                <div style="text-align:center; margin-top:20px;">
+
+                    <img 
+                        src="https://drive.google.com/thumbnail?id=1A7qwyQEb_MXljzGpUo2bDCaW-sCp-4h-&sz=w1000"
+                        alt="Resultado Clasificación de Texturas"
+                        class="image-preview"
+                        style="
+                            width:100%;
+                            max-width:650px;
+                            border-radius:15px;
+                            box-shadow:0 8px 25px rgba(0,0,0,0.2);
+                        ">
+
+                    <p style="
+                        margin-top:10px;
+                        color:#5a6c7d;
+                        font-size:0.95rem;
+                    ">
+                        Resultado del procesamiento y clasificación de texturas
+                    </p>
+
+                    <a 
+                        href="https://drive.google.com/file/d/1A7qwyQEb_MXljzGpUo2bDCaW-sCp-4h-/view?usp=sharing"
+                        target="_blank"
+                        style="
+                            display:inline-block;
+                            margin-top:10px;
+                            background:#3498db;
+                            color:white;
+                            padding:10px 18px;
+                            border-radius:25px;
+                            text-decoration:none;
+                            font-weight:600;
+                        ">
+                        Ver imagen completa
+                    </a>
+
+                </div>
+
             </div>
+
+
 
             <!-- b) Filtro de suavizado -->
             <h3 class="section-subtitle" id="filtro"><i class="fas fa-filter"></i> b) Filtro de suavizado</h3>
@@ -879,10 +1026,50 @@ resultado = np.zeros((alto, ancho, canales), dtype=np.uint8)<br>
 cv2.imwrite(<span style="color:#c3e88d;">"resultado.jpg"</span>, resultado)
                 </div>
                 <p><strong>Instalación:</strong> <code>pip install opencv-python</code></p>
-                <div class="image-grid">
-                    <img src="https://via.placeholder.com/300x180/e74c3c/white?text=Original" alt="Original" class="image-preview" style="width:280px;">
-                    <img src="https://via.placeholder.com/300x180/3498db/white?text=Filtro+3x3+Aplicado" alt="Filtrado" class="image-preview" style="width:280px;">
+                
+                
+
+                <div style="text-align:center; margin:15px 0;">
+
+                    <img 
+                        src="https://drive.google.com/thumbnail?id=1rcGw_GA31RI6nGHebnzEZA7lyjdiqNDR&sz=w1000"
+                        alt="Comparación Original vs Suavizado"
+                        style="
+                            width:100%;
+                            max-width:700px;
+                            border-radius:15px;
+                            box-shadow:0 8px 25px rgba(0,0,0,0.2);
+                        ">
+
+                    <p style="
+                        margin-top:10px;
+                        color:#5a6c7d;
+                        font-size:0.95rem;
+                    ">
+                        Comparación: Imagen Original vs Filtro Suavizado 3x3
+                    </p>
+
+                    <a 
+                        href="https://drive.google.com/file/d/1rcGw_GA31RI6nGHebnzEZA7lyjdiqNDR/view?usp=sharing"
+                        target="_blank"
+                        style="
+                            display:inline-block;
+                            margin-top:10px;
+                            background:#3498db;
+                            color:white;
+                            padding:10px 18px;
+                            border-radius:25px;
+                            text-decoration:none;
+                            font-weight:600;
+                        ">
+                        Ver imagen completa
+                    </a>
+
                 </div>
+
+
+
+
             </div>
 
             <!-- c) Cover La Vaca Lola -->
@@ -901,15 +1088,43 @@ cv2.imwrite(<span style="color:#c3e88d;">"resultado.jpg"</span>, resultado)
                     <li>Reconstruir video con cv2.VideoWriter</li>
                     <li>Sincronizar: <code>ffmpeg -i video.mp4 -i vacalola.mp3 -c:v copy -c:a copy videofinal.mp4</code></li>
                 </ol>
+
+
+
                 <div class="media-frame">
-                    <video controls poster="https://via.placeholder.com/800x450/8e44ad/white?text=La+Vaca+Lola">
-                        <source src="https://drive.google.com/uc?export=download&id=1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2" type="video/mp4">
-                    </video>
+
+                    <iframe
+                        src="https://drive.google.com/file/d/1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2/preview"
+                        width="100%"
+                        height="500"
+                        allow="autoplay"
+                        style="
+                            border:none;
+                            border-radius:15px;
+                            background:#000;
+                        ">
+                    </iframe>
+
                 </div>
-                <a href="https://drive.google.com/file/d/1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2/view" target="_blank" style="display:inline-block; margin-top:10px; background:#e74c3c; color:white; padding:10px 20px; border-radius:25px; text-decoration:none; font-weight:600;">
-                    <i class="fab fa-google-drive"></i> Ver video en Google Drive
+
+                <a href="https://drive.google.com/file/d/1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2/view?usp=sharing"
+                target="_blank"
+                style="
+                display:inline-block;
+                margin-top:10px;
+                background:#e74c3c;
+                color:white;
+                padding:10px 20px;
+                border-radius:25px;
+                text-decoration:none;
+                font-weight:600;
+                ">
+                🎥 Ver / Descargar Video
                 </a>
-            </div>
+
+
+
+
         </section>
 
         <!-- ==================== 5. INFORME ==================== -->
