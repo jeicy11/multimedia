@@ -1,0 +1,22 @@
+[
+    {
+        "flujo": "F1",
+        "proceso": "P4",
+        "procesoSI": "P5",
+        "procesoNO": "P1"
+    },
+
+    {
+        "flujo": "F2",
+        "proceso": "P4",
+        "procesoSI": "P5",
+        "procesoNO": "P1"
+    },
+
+    {
+        "flujo": "F3",
+        "proceso": "P6",
+        "procesoSI": "P7",
+        "procesoNO": "P1"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "usuario": "juan",
+        "nombre": "Juan Pérez",
+        "rol": "estudiante",
+        "password": "123456"
+    },
+    {
+        "id": 2,
+        "usuario": "kardex1",
+        "nombre": "María Choque",
+        "rol": "kardex",
+        "password": "123456"
+    },
+    {
+        "id": 3,
+        "usuario": "director1",
+        "nombre": "Carlos Flores",
+        "rol": "director1",
+        "password": "123456"
+    },
+    {
+        "id": 4,
+        "usuario": "director2",
+        "nombre": "Ana Mendoza",
+        "rol": "director2",
+        "password": "123456"
+    },
+    {
+        "id": 5,
+        "usuario": "caja1",
+        "nombre": "Luis Vargas",
+        "rol": "caja",
+        "password": "123456"
+    }
+
+]

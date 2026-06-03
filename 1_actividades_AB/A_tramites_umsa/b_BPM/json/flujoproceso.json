@@ -1,0 +1,190 @@
+[
+    {
+        "flujo": "F1",
+        "proceso": "P1",
+        "procesoSiguiente": "P2",
+        "tipo": "I",
+        "pantalla": "solicitar_inscripcion.php",
+        "rol": "estudiante"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P2",
+        "procesoSiguiente": "P3",
+        "tipo": "P",
+        "pantalla": "validar_requisitos.php",
+        "rol": "kardex"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P3",
+        "procesoSiguiente": "P4",
+        "tipo": "P",
+        "pantalla": "revision_director1.php",
+        "rol": "director1"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P4",
+        "procesoSiguiente": "P5",
+        "tipo": "C",
+        "pantalla": "aprobacion_director2.php",
+        "rol": "director2"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P5",
+        "procesoSiguiente": "P6",
+        "tipo": "P",
+        "pantalla": "registrar_inscripcion.php",
+        "rol": "kardex"
+    },
+    {
+        "flujo": "F1",
+        "proceso": "P6",
+        "procesoSiguiente": null,
+        "tipo": "F",
+        "pantalla": "mostrar_resultado.php",
+        "rol": "estudiante"
+    },
+
+
+
+
+
+
+    {
+        "flujo": "F2",
+        "proceso": "P1",
+        "procesoSiguiente": "P2",
+        "tipo": "I",
+        "pantalla": "solicitar_certificado.php",
+        "rol": "estudiante"
+    },
+    {
+        "flujo": "F2",
+        "proceso": "P2",
+        "procesoSiguiente": "P3",
+        "tipo": "P",
+        "pantalla": "verificar_datos.php",
+        "rol": "kardex"
+    },
+    {
+        "flujo": "F2",
+        "proceso": "P3",
+        "procesoSiguiente": "P4",
+        "tipo": "P",
+        "pantalla": "revision_certificado.php",
+        "rol": "director1"
+    },
+    {
+        "flujo": "F2",
+        "proceso": "P4",
+        "procesoSiguiente": "P5",
+        "tipo": "P",
+        "pantalla": "aprobacion_final.php",
+        "rol": "director2"
+    },
+    {
+        "flujo": "F2",
+        "proceso": "P5",
+        "procesoSiguiente": "P6",
+        "tipo": "P",
+        "pantalla": "pago_certificado.php",
+        "rol": "caja"
+    },
+    {
+        "flujo": "F2",
+        "proceso": "P6",
+        "procesoSiguiente": "P7",
+        "tipo": "P",
+        "pantalla": "generar_certificado.php",
+        "rol": "kardex"
+    },
+    {
+        "flujo": "F2",
+        "proceso": "P7",
+        "procesoSiguiente": null,
+        "tipo": "F",
+        "pantalla": "descargar_certificado.php",
+        "rol": "estudiante"
+    },
+
+
+
+
+
+
+    {
+        
+        "proceso": "P1",
+        "procesoSiguiente": "P2",
+        "tipo": "I",
+        "pantalla": "solicitar_titulo.php",
+        "rol": "estudiante"
+    },
+    {
+        
+        "proceso": "P2",
+        "procesoSiguiente": "P3",
+        "tipo": "P",
+        "pantalla": "validar_historial.php",
+        "rol": "kardex"
+    },
+    {
+        
+        "proceso": "P3",
+        "procesoSiguiente": "P4",
+        "tipo": "P",
+        "pantalla": "revisar_director1.php",
+        "rol": "director1"
+    },
+    {
+        
+        "proceso": "P4",
+        "procesoSiguiente": "P5",
+        "tipo": "P",
+        "pantalla": "aprobar_director2.php",
+        "rol": "director2"
+    },
+    {
+        
+        "proceso": "P5",
+        "procesoSiguiente": "P6",
+        "tipo": "P",
+        "pantalla": "validar_decanato.php",
+        "rol": "decanato"
+    },
+    {
+        
+        "proceso": "P6",
+        "procesoSiguiente": "P7",
+        "tipo": "P",
+        "pantalla": "validar_rectorado.php",
+        "rol": "rectorado"
+    },
+    {
+        
+        "proceso": "P7",
+        "procesoSiguiente": "P8",
+        "tipo": "P",
+        "pantalla": "registrar_pago.php",
+        "rol": "caja"
+    },
+    {
+        
+        "proceso": "P8",
+        "procesoSiguiente": "P9",
+        "tipo": "P",
+        "pantalla": "emitir_titulo.php",
+        "rol": "archivo"
+    },
+    {
+        
+        "proceso": "P9",
+        "procesoSiguiente": null,
+        "tipo": "F",
+        "pantalla": "descargar_titulo.php",
+        "rol": "estudiante"
+    }
+]
