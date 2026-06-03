@@ -781,20 +781,27 @@ Se implementó un filtro promedio 3x3 para reducir ruido y suavizar imágenes.
 
 IMPLEMENTACIÓN DE UN FILTRO DE SUAVIZADO
 Descripción
+
 Este módulo consiste en la implementación de un filtro de promedio utilizando una ventana de 3x3 píxeles. El objetivo es reducir el ruido en la imagen y suavizar las transiciones de color, obteniendo una imagen con mejor calidad visual.
 Metodología utilizada
+
 El filtro recorre cada píxel de la imagen aplicando una ventana de 3x3 sobre sus vecinos. Para cada posición se calcula el promedio de los valores de los píxeles en los canales de color. El valor resultante reemplaza al píxel central generando una imagen suavizada.
+
 Tecnologías utilizadas
-•	Python
-•	OpenCV
-•	NumPy
-•	Microsoft Visual Studio
+
+• Python
+• OpenCV
+• NumPy
+• Microsoft Visual Studio
+
 Proceso de implementación
-•	Carga de la imagen original
-•	Conversión de la imagen a matriz de píxeles
-•	Recorrido de la imagen con ventana 3x3
-•	Cálculo del promedio de los valores RGB
-•	Generación de la imagen filtrada
+
+• Carga de la imagen original
+• Conversión de la imagen a matriz de píxeles
+• Recorrido de la imagen con ventana 3x3
+• Cálculo del promedio de los valores RGB
+• Generación de la imagen filtrada
+
 Código del filtro
 import cv2
 import numpy as np
