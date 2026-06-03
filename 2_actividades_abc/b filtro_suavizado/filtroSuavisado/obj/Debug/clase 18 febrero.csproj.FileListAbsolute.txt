@@ -1,0 +1,53 @@
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.csprojResolveAssemblyReference.cache
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase_18_febrero.Form1.resources
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase_18_febrero.Properties.Resources.resources
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.GenerateResource.Cache
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\bin\Debug\clase 18 febrero.exe
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\bin\Debug\clase 18 febrero.pdb
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\INF-322\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\bin\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\bin\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.csprojAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase_18_febrero.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase_18_febrero.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.GenerateResource.cache
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.CoreCompileInputs.cache
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\clase 18 febrero\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\bin\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\bin\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase_18_febrero.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase_18_febrero.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\AUX 4 ABRIL\practica 1\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.GenerateResource.Cache
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\bin\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\bin\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase_18_febrero.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase_18_febrero.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\IMAGEN OLORES VAIROS\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.GenerateResource.Cache
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\bin\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\bin\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\obj\Debug\clase 18 febrero.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\obj\Debug\clase_18_febrero.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\obj\Debug\clase_18_febrero.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\13 ABRIL\primera pregunta\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.GenerateResource.Cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\texturasVisual\textura\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\texturasVisual\textura\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\obj\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\obj\Debug\clase 18 febrero.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\obj\Debug\clase 18 febrero.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\obj\Debug\clase_18_febrero.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\obj\Debug\clase_18_febrero.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\obj\Debug\clase 18 febrero.csproj.GenerateResource.Cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\bin\Debug\clase 18 febrero.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\textura\clase 18 febrero\bin\Debug\clase 18 febrero.pdb

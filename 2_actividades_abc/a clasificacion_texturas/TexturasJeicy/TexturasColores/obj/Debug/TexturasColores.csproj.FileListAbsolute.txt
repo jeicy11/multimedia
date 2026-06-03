@@ -1,0 +1,32 @@
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\bin\Debug\TexturasColores.exe
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\bin\Debug\TexturasColores.pdb
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\obj\Debug\TexturasColores.Form1.resources
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\obj\Debug\TexturasColores.Properties.Resources.resources
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\obj\Debug\TexturasColores.csproj.GenerateResource.Cache
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\obj\Debug\TexturasColores.exe
+c:\users\jeykey\documents\visual studio 2012\Projects\TexturasColores\TexturasColores\obj\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Documents\Visual Studio 2012\Projects\TexturasColores\TexturasColores\obj\Debug\TexturasColores.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\obj\Debug\TexturasColores.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\obj\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\bin\Debug\TexturasColores.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\bin\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\obj\Debug\TexturasColores.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\obj\Debug\TexturasColores.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\obj\Debug\TexturasColores.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasColores\TexturasColores\obj\Debug\TexturasColores.csproj.GenerateResource.Cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\obj\Debug\TexturasColores.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\obj\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\bin\Debug\TexturasColores.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\bin\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\obj\Debug\TexturasColores.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\obj\Debug\TexturasColores.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\obj\Debug\TexturasColores.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color\TexturasColores\obj\Debug\TexturasColores.csproj.GenerateResource.Cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\obj\Debug\TexturasColores.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\obj\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\bin\Debug\TexturasColores.exe
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\bin\Debug\TexturasColores.pdb
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\obj\Debug\TexturasColores.csprojResolveAssemblyReference.cache
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\obj\Debug\TexturasColores.Form1.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\obj\Debug\TexturasColores.Properties.Resources.resources
+C:\Users\JeyKey\Desktop\multimedia\SEGUNDO PARCIAL\PRACTICA\TexturasImagnepor color  ok funciona\TexturasColores\obj\Debug\TexturasColores.csproj.GenerateResource.Cache
