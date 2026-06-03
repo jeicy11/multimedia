@@ -790,16 +790,23 @@ El filtro recorre cada píxel de la imagen aplicando una ventana de 3x3 sobre su
 Tecnologías utilizadas
 
 • Python
+
 • OpenCV
+
 • NumPy
+
 • Microsoft Visual Studio
 
 Proceso de implementación
 
 • Carga de la imagen original
+
 • Conversión de la imagen a matriz de píxeles
+
 • Recorrido de la imagen con ventana 3x3
+
 • Cálculo del promedio de los valores RGB
+
 • Generación de la imagen filtrada
 
 Código del filtro
@@ -819,7 +826,9 @@ for i in range(1, alto-1):
 
 cv2.imwrite("resultado.jpg", resultado)
 Ejecución en Microsoft Visual Studio
+
 Requisitos
+
 • Python instalado
 • Microsoft Visual Studio instalado
 • Soporte de Python en Visual Studio
