@@ -830,9 +830,13 @@ Ejecución en Microsoft Visual Studio
 Requisitos
 
 • Python instalado
+
 • Microsoft Visual Studio instalado
+
 • Soporte de Python en Visual Studio
+
 • OpenCV instalado
+
 Instalación de dependencias:
 pip install opencv-python
 Ejecución del programa
