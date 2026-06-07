@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Multimedia UMSA 2026 | Michelle Jeicy Avilés Loza | Informática</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a2a5e;
+            --primary-light: #1a4a8a;
+            --secondary: #d4af37;
+            --accent: #00b4d8;
+            --dark: #0d1117;
+            --light: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #2c3e50;
+            --text-light: #5a6c7d;
+            --gradient-1: linear-gradient(135deg, #0a2a5e 0%, #1a4a8a 100%);
+            --gradient-2: linear-gradient(135deg, #d4af37 0%, #f0c75e 100%);
+            --gradient-3: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+            --gradient-4: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%);
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+            --shadow-lg: 0 20px 50px rgba(0,0,0,0.18);
+            --shadow-xl: 0 30px 60px rgba(0,0,0,0.25);
+            --radius-sm: 12px;
+            --radius-md: 20px;
+            --radius-lg: 28px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(180deg, #f0f4f8 0%, #e8edf5 50%, #f8f9fa 100%);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .bg-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image:
+                radial-gradient(circle at 20% 30%, #0a2a5e 1px, transparent 1px),
+                radial-gradient(circle at 80% 70%, #00b4d8 1px, transparent 1px),
+                radial-gradient(circle at 50% 50%, #d4af37 1px, transparent 1px),
+                radial-gradient(circle at 40% 80%, #8e44ad 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+
+        /* ========== HERO PRINCIPAL ========== */
+        .hero {
+            background: var(--gradient-1);
+            color: white;
+            padding: 60px 0 50px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 50px;
+            box-shadow: var(--shadow-xl);
+            border-radius: 0 0 50px 50px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -100px;
+            width: 600px;
+            height: 600px;
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -50px;
+            width: 400px;
+            height: 400px;
+            background: rgba(0, 180, 216, 0.06);
+            border-radius: 50%;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .hero-text h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.4rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #ffffff, #f0c75e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-text .subtitle {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            color: #e0e8f0;
+            margin-bottom: 6px;
+        }
+        .hero-text .author {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary);
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .hero-info {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            padding: 25px 35px;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+        }
+        .hero-info p {
+            margin: 4px 0;
+            font-size: 0.95rem;
+        }
+        .hero-info strong {
+            color: var(--secondary);
+        }
+
+        /* ========== NAVEGACIÓN PRINCIPAL ========== */
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 35px 0 10px;
+            justify-content: center;
+        }
+        .main-nav a {
+            background: white;
+            color: var(--primary);
+            padding: 13px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .main-nav a:hover {
+            border-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            background: #fef9e7;
+        }
+        .main-nav a i {
+            margin-right: 6px;
+        }
+
+        /* ========== SECCIONES ========== */
+        .section {
+            margin: 50px 0;
+        }
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 4px solid var(--secondary);
+            padding-bottom: 12px;
+        }
+        .section-title i {
+            color: var(--secondary);
+            font-size: 2rem;
+        }
+        .section-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin: 30px 0 15px;
+            padding-left: 15px;
+            border-left: 5px solid var(--accent);
+        }
+
+        /* ========== TARJETAS ========== */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius-md);
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gradient-3);
+        }
+        .card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+        .card h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            margin: 15px 0 8px;
+            color: var(--primary-light);
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0;
+        }
+        .tech-tags span {
+            background: #e8f0fe;
+            color: #0a2a5e;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .badge {
+            background: var(--gradient-2);
+            color: #0a2a5e;
+            font-weight: 700;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 3px;
+        }
+        .badge-accent {
+            background: var(--gradient-3);
+            color: white;
+            font-weight: 700;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        /* ========== TABLAS ========== */
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: white;
+        }
+        th {
+            background: var(--primary);
+            color: white;
+            padding: 12px 10px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #e8ecf1;
+            text-align: center;
+        }
+        tr:hover td {
+            background: #f0f7ff;
+        }
+        tr:nth-child(even) td {
+            background: #fafbfc;
+        }
+
+        /* ========== DIAGRAMA SVG ========== */
+        .diagram-container {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            margin: 25px 0;
+            overflow-x: auto;
+        }
+
+        /* ========== CÓDIGO ========== */
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.82rem;
+            overflow-x: auto;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+
+        /* ========== MEDIA ========== */
+        .media-frame {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin: 20px 0;
+            background: #000;
+        }
+        iframe, video {
+            width: 100%;
+            border: none;
+        }
+        video {
+            aspect-ratio: 16/9;
+        }
+
+        /* ========== IMÁGENES ========== */
+        .image-preview {
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-md);
+            max-width: 100%;
+            margin: 12px 0;
+            border: 3px solid white;
+            transition: var(--transition);
+        }
+        .image-preview:hover {
+            transform: scale(1.02);
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        /* ========== LISTAS ========== */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li i {
+            color: var(--accent);
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: var(--dark);
+            color: #ccc;
+            text-align: center;
+            padding: 45px 20px;
+            margin-top: 70px;
+            border-radius: 50px 50px 0 0;
+        }
+        footer strong {
+            color: var(--secondary);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-particles"></div>
+    <div class="container">
+
+        <!-- ==================== HERO / PORTADA PRINCIPAL ==================== -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>PROYECTO MULTIMEDIA</h1>
+                    <p class="subtitle">Digitalización de Trámites · BPM · 3D · Procesamiento de Imágenes · Audiovisual</p>
+                    <p class="author"><i class="fas fa-user-graduate"></i> Avilés Loza Michelle Jeicy</p>
+                </div>
+                <div class="hero-info">
+                    <p><strong>C.I.:</strong> 12390932</p>
+                    <p><strong>Docente:</strong> Lic. Moisés Silva</p>
+                    <p><strong>Fecha:</strong> 3 de junio de 2026</p>
+                    <p><strong>La Paz - Bolivia</strong></p>
+                    <p style="margin-top:6px;"><strong>MULTIMEDIA · UMSA 2026</strong></p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="#descripcion"><i class="fas fa-info-circle"></i> Descripción</a>
+                <a href="#tramites"><i class="fas fa-sitemap"></i> Trámites BPM</a>
+                <a href="#tablas"><i class="fas fa-table"></i> Tablas Flujos</a>
+                <a href="#implementacion"><i class="fas fa-code"></i> Implementación</a>
+                <a href="#3d"><i class="fas fa-cube"></i> 3D & VR</a>
+                <a href="#avatar"><i class="fas fa-user-circle"></i> Avatar</a>
+                <a href="#texturas"><i class="fas fa-th"></i> Texturas</a>
+                <a href="#filtro"><i class="fas fa-filter"></i> Filtro</a>
+                <a href="#vaca"><i class="fas fa-music"></i> Vaca Lola</a>
+                <a href="#informe"><i class="fas fa-file-pdf"></i> Informe</a>
+            </nav>
+        </header>
+
+        <!-- ==================== DESCRIPCIÓN GENERAL ==================== -->
+        <section id="descripcion" class="section">
+            <h2 class="section-title"><i class="fas fa-star"></i> Descripción General</h2>
+            <div class="card">
+                <p style="font-size:1.1rem;">Este proyecto integra <strong>desarrollo multimedia, procesamiento de imágenes, animación y sincronización audiovisual</strong>. Incluye la digitalización de trámites universitarios, desarrollo 3D, procesamiento de imágenes y producción de contenido audiovisual.</p>
+                <p style="margin-top:12px;"><strong>Estructura del repositorio:</strong></p>
+                <div class="tech-tags">
+                    <span>📁 1_actividades_AB</span>
+                    <span>📁 2_actividades_abc</span>
+                    <span>📁 3_informe</span>
+                    <span>📁 assets</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 1. ACTIVIDADES A Y B ==================== -->
+        <section id="tramites" class="section">
+            <h2 class="section-title"><i class="fas fa-layer-group"></i> 1. Actividades A y B</h2>
+            <div class="card">
+                <h3><i class="fas fa-university"></i> A. Digitalización de Trámites Universitarios (UMSA)</h3>
+                <p>Los estudiantes deberán seleccionar dos trámites universitarios (por ejemplo: inscripción de materias, emisión de certificados o solicitud de títulos) y desarrollar una propuesta de modernización digital considerando los siguientes componentes:</p>
+                <ul class="feature-list" style="margin-top:12px;">
+                    <li><i class="fas fa-check-circle"></i> <strong>A.a) Modelado del Proceso:</strong> Elaborar un diagrama de flujo que represente el funcionamiento completo del trámite, identificando entradas, procesos, validaciones y resultados.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>A.b) BPM:</strong> Implementar un sistema de almacenamiento basado en archivos JSON, evitando el uso de servidores de bases de datos tradicionales. La información deberá poder registrarse, consultarse y actualizarse dinámicamente.</li>
+                </ul>
+            </div>
+
+            <!-- A.a) Modelado del Proceso -->
+            <h3 class="section-subtitle"><i class="fas fa-project-diagram"></i> A.a) Modelado del Proceso</h3>
+            <div class="card">
+                <h3>1. Metodología utilizada - Modelado del Proceso</h3>
+                <p>Para el desarrollo del proyecto se realizó el <strong>modelado de procesos utilizando diagramas de flujo BPM (Business Process Management)</strong>, con el objetivo de representar gráficamente el funcionamiento completo de los trámites universitarios digitalizados dentro de la Carrera de Informática de la UMSA.</p>
+                <p style="margin-top:10px;">El sistema implementa dos workflows principales:</p>
+                <p style="margin:10px 0;">
+                    <span class="badge">F1: Inscripción de Materias</span>
+                    <span class="badge">F2: Emisión de Certificados</span>
+                </p>
+                <p>Cada flujo fue estructurado identificando claramente:</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-sign-in-alt"></i> <strong>Entradas del sistema.</strong></li>
+                    <li><i class="fas fa-cogs"></i> <strong>Procesos administrativos.</strong></li>
+                    <li><i class="fas fa-check-double"></i> <strong>Validaciones académicas.</strong></li>
+                    <li><i class="fas fa-users"></i> <strong>Roles responsables.</strong></li>
+                    <li><i class="fas fa-flag-checkered"></i> <strong>Resultados finales.</strong></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-arrow-right"></i> Flujo F1 — Inscripción de Materias</h3>
+                <p>El proceso inicia con la solicitud realizada por el <strong>estudiante</strong>. Posteriormente, <strong>Kardex</strong> verifica el requisito académico y valida la información correspondiente. Luego, <strong>Director 1</strong> y <strong>Director 2</strong> realizan las revisiones y aprobaciones necesarias. Finalmente, <strong>Kardex</strong> registra oficialmente la inscripción y el <strong>estudiante</strong> recibe el resultado final del trámite.</p>
+                <div style="background:#f0f7ff; padding:15px; border-radius:10px; margin-top:12px; text-align:center; font-weight:600;">
+                    Estudiante → Kardex → Director 1 → Director 2 → Kardex → Estudiante
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-arrow-right"></i> Flujo F2 — Emisión de Certificados</h3>
+                <p>El <strong>estudiante</strong> solicita un certificado académico. <strong>Kardex</strong> verifica los datos del historial académico y posteriormente el trámite pasa por las etapas de revisión y aprobación de <strong>Director 1</strong> y <strong>Director 2</strong>. Luego, <strong>Caja</strong> registra el pago correspondiente y finalmente <strong>Kardex</strong> genera el certificado digital para que el <strong>estudiante</strong> pueda descargarlo.</p>
+                <div style="background:#f0f7ff; padding:15px; border-radius:10px; margin-top:12px; text-align:center; font-weight:600;">
+                    Estudiante → Kardex → Director 1 → Director 2 → Caja → Kardex → Estudiante
+                </div>
+            </div>
+
+            <div class="card">
+            <!-- Diagrama de flujo SVG -->
+            <div class="diagram-container">
+                <h3 style="margin-bottom:20px;"><i class="fas fa-chart-bar"></i> Diagrama de Flujo BPM</h3>
+                <svg width="100%" height="220" viewBox="0 0 950 220" style="max-width:900px;">
+                    <text x="20" y="30" fill="#0a2a5e" font-weight="bold" font-size="14">Flujo F1 - Inscripción</text>
+                    <rect x="20" y="50" width="90" height="40" rx="20" fill="#0a2a5e"/>
+                    <text x="65" y="75" fill="white" font-size="12" text-anchor="middle" font-weight="bold">P1 Inicio</text>
+                    <line x1="110" y1="70" x2="145" y2="70" stroke="#d4af37" stroke-width="3"/>
+                    <rect x="145" y="50" width="90" height="40" rx="10" fill="#1a4a8a"/>
+                    <text x="190" y="75" fill="white" font-size="12" text-anchor="middle">P2 Kardex</text>
+                    <line x1="235" y1="70" x2="270" y2="70" stroke="#d4af37" stroke-width="3"/>
+                    <rect x="270" y="50" width="90" height="40" rx="10" fill="#0077b6"/>
+                    <text x="315" y="75" fill="white" font-size="12" text-anchor="middle">P3 Dir1</text>
+                    <line x1="360" y1="70" x2="395" y2="70" stroke="#d4af37" stroke-width="3"/>
+                    <rect x="395" y="50" width="100" height="40" rx="10" fill="#00b4d8"/>
+                    <text x="445" y="75" fill="white" font-size="12" text-anchor="middle">P4 Dir2</text>
+                    <line x1="495" y1="70" x2="530" y2="70" stroke="#d4af37" stroke-width="3"/>
+                    <rect x="530" y="50" width="90" height="40" rx="10" fill="#d4af37"/>
+                    <text x="575" y="75" fill="#0a2a5e" font-size="12" text-anchor="middle" font-weight="bold">P5 Kardex</text>
+                    <line x1="620" y1="70" x2="655" y2="70" stroke="#d4af37" stroke-width="3"/>
+                    <rect x="655" y="50" width="90" height="40" rx="20" fill="#0a2a5e"/>
+                    <text x="700" y="75" fill="white" font-size="12" text-anchor="middle">P6 Fin</text>
+                    <path d="M445 90 L445 130 L65 130 L65 90" fill="none" stroke="red" stroke-width="2" stroke-dasharray="6"/>
+                    <text x="250" y="122" fill="red" font-size="10" font-weight="bold">Si Dir2 rechaza → vuelve a P1</text>
+                    <text x="20" y="175" fill="#0a2a5e" font-weight="bold" font-size="14">Flujo F2 - Certificados</text>
+                    <rect x="20" y="185" width="70" height="30" rx="15" fill="#0a2a5e"/>
+                    <text x="55" y="204" fill="white" font-size="10" text-anchor="middle">P1</text>
+                    <line x1="90" y1="200" x2="115" y2="200" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="115" y="185" width="70" height="30" rx="8" fill="#1a4a8a"/>
+                    <text x="150" y="204" fill="white" font-size="10" text-anchor="middle">P2</text>
+                    <line x1="185" y1="200" x2="210" y2="200" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="210" y="185" width="70" height="30" rx="8" fill="#0077b6"/>
+                    <text x="245" y="204" fill="white" font-size="10" text-anchor="middle">P3</text>
+                    <line x1="280" y1="200" x2="305" y2="200" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="305" y="185" width="80" height="30" rx="8" fill="#00b4d8"/>
+                    <text x="345" y="204" fill="white" font-size="10" text-anchor="middle">P4 Dir2</text>
+                    <line x1="385" y1="200" x2="410" y2="200" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="410" y="185" width="70" height="30" rx="8" fill="#e67e22"/>
+                    <text x="445" y="204" fill="white" font-size="10" text-anchor="middle">P5 Caja</text>
+                    <line x1="480" y1="200" x2="505" y2="200" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="505" y="185" width="70" height="30" rx="8" fill="#d4af37"/>
+                    <text x="540" y="204" fill="#0a2a5e" font-size="10" text-anchor="middle">P6</text>
+                    <line x1="575" y1="200" x2="600" y2="200" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="600" y="185" width="70" height="30" rx="15" fill="#0a2a5e"/>
+                    <text x="635" y="204" fill="white" font-size="10" text-anchor="middle">P7 Fin</text>
+                    <path d="M345 215 L345 230 L55 230 L55 215" fill="none" stroke="red" stroke-width="2" stroke-dasharray="5"/>
+                    <text x="195" y="245" fill="red" font-size="9">Rechazo → P1</text>
+                </svg>
+                <p style="margin-top:15px; color:#5a6c7d;"><i>Los diagramas BPM permitieron representar de manera clara el recorrido completo de cada trámite, facilitando la automatización del workflow.</i></p>
+            </div>
+            </div>
+            
+
+
+            <div class="card">
+                <h3>2. Herramientas y tecnologías empleadas</h3>
+                <div class="tech-tags">
+                    <span><i class="fab fa-php"></i> PHP</span>
+                    <span><i class="fas fa-database"></i> JSON</span>
+                    <span><i class="fab fa-html5"></i> HTML</span>
+                    <span><i class="fab fa-css3-alt"></i> CSS</span>
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    <span><i class="fas fa-chart-line"></i> Mermaid</span>
+                    <span><i class="fas fa-server"></i> XAMPP</span>
+                    <span><i class="fas fa-code"></i> Microsoft Visual Studio</span>
+                    <span><i class="fab fa-github"></i> GitHub</span>
+                </div>
+            </div>
+
+
+
+            <!-- A.b) BPM -->
+            <h3 class="section-subtitle"><i class="fas fa-database"></i> A.b) BPM</h3>
+            <div class="card">
+                <h3>1. Metodología Utilizada</h3>
+                <p>Para el desarrollo del sistema se utilizó una <strong>metodología incremental orientada a procesos BPM (Business Process Management)</strong>, permitiendo modelar y automatizar los trámites universitarios mediante workflows digitales.</p>
+                <h4>a) Análisis del Problema</h4>
+                <p>Se identificaron los trámites universitarios más comunes: <strong>Inscripción de materias</strong> y <strong>Emisión de certificados</strong>. Se analizaron roles, documentos y secuencia de aprobación.</p>
+                <h4>b) Modelado de Procesos</h4>
+                <p>Se diseñaron diagramas BPM representando: entradas, validaciones, procesos, responsables y resultados finales. Cada flujo dividido en procesos P1, P2, P3...</p>
+                <h4>c) Diseño del Workflow</h4>
+                <p>Motor workflow dinámico basado en flujos, procesos, roles y transición automática entre tareas.</p>
+                <p style="margin-top:10px;">Flujos: <span class="badge">F1: Inscripción</span> <span class="badge">F2: Trámite de Certificados</span></p>
+                <p>Cada flujo representado en 4 tablas: <strong>flujoProceso, flujoCondicion, seguimiento, usuarios</strong> (usuarios es compartida).</p>
+            </div>
+        </section>
+
+        <!-- ==================== TABLAS DE FLUJOS ==================== -->
+        <section id="tablas" class="section">
+            <h2 class="section-title"><i class="fas fa-table"></i> Tablas de Flujos</h2>
+
+            <!-- FLUJO F1 -->
+            <div class="card">
+                <h3><span class="badge">FLUJO F1: INSCRIPCIÓN</span></h3>
+                <h4>Tabla flujoProceso (F1)</h4>
+                <div class="table-container">
+                    <table>
+                        <tr><th>flujo</th><th>proceso</th><th>procesoSiguiente</th><th>tipo</th><th>rol</th><th>pantalla</th></tr>
+                        <tr><td>F1</td><td>P1</td><td>P2</td><td>I</td><td>estudiante</td><td>solicitar_inscripcion.php</td></tr>
+                        <tr><td>F1</td><td>P2</td><td>P3</td><td>P</td><td>kardex</td><td>validar_requisitos.php</td></tr>
+                        <tr><td>F1</td><td>P3</td><td>P4</td><td>P</td><td>director1</td><td>revision_director1.php</td></tr>
+                        <tr><td>F1</td><td>P4</td><td>P5</td><td>C</td><td>director2</td><td>aprobacion_director2.php</td></tr>
+                        <tr><td>F1</td><td>P5</td><td>P6</td><td>P</td><td>kardex</td><td>registrar_inscripcion.php</td></tr>
+                        <tr><td>F1</td><td>P6</td><td>NULL</td><td>F</td><td>estudiante</td><td>mostrar_resultado.php</td></tr>
+                    </table>
+                </div>
+                <h4>Tabla flujoCondicion (F1)</h4>
+                <div class="table-container">
+                    <table>
+                        <tr><th>flujo</th><th>proceso</th><th>procesoSI</th><th>procesoNO</th></tr>
+                        <tr><td>F1</td><td>P4</td><td>P5</td><td>P1</td></tr>
+                    </table>
+                </div>
+                <p><strong>Interpretación:</strong> Si Director2 <strong>aprueba</strong> → P5 | Si <strong>rechaza</strong> → P1</p>
+                <h4>Tabla seguimiento (F1) - Ticket 1001</h4>
+                <div class="table-container">
+                    <table>
+                        <tr><th>ticket</th><th>proceso</th><th>usuario</th><th>fechaInicio</th><th>fechaFin</th></tr>
+                        <tr><td>1001</td><td>P1</td><td>juan</td><td>08:00</td><td>08:10</td></tr>
+                        <tr><td>1001</td><td>P2</td><td>kardex1</td><td>08:10</td><td>08:12</td></tr>
+                        <tr><td>1001</td><td>P3</td><td>director1</td><td>08:12</td><td>08:12</td></tr>
+                        <tr><td>1001</td><td>P4</td><td>director2</td><td>08:12</td><td>08:13</td></tr>
+                        <tr><td>1001</td><td>P5</td><td>kardex1</td><td>08:13</td><td>08:15</td></tr>
+                        <tr><td>1001</td><td>P6</td><td>juan</td><td>08:15</td><td>08:15</td></tr>
+                    </table>
+                </div>
+                <p><strong>Ticket 1002 (Pendiente en P3):</strong> juan → kardex1 → director1</p>
+            </div>
+
+            <!-- FLUJO F2 -->
+            <div class="card">
+                <h3><span class="badge">FLUJO F2: CERTIFICADOS</span></h3>
+                <h4>Tabla flujoProceso (F2)</h4>
+                <div class="table-container">
+                    <table>
+                        <tr><th>flujo</th><th>proceso</th><th>procesoSiguiente</th><th>tipo</th><th>rol</th><th>pantalla</th></tr>
+                        <tr><td>F2</td><td>P1</td><td>P2</td><td>I</td><td>estudiante</td><td>solicitar_certificado.php</td></tr>
+                        <tr><td>F2</td><td>P2</td><td>P3</td><td>P</td><td>kardex</td><td>verificar_datos.php</td></tr>
+                        <tr><td>F2</td><td>P3</td><td>P4</td><td>P</td><td>director1</td><td>revision_certificado.php</td></tr>
+                        <tr><td>F2</td><td>P4</td><td>P5</td><td>C</td><td>director2</td><td>aprobacion_final.php</td></tr>
+                        <tr><td>F2</td><td>P5</td><td>P6</td><td>P</td><td>caja</td><td>pago_certificado.php</td></tr>
+                        <tr><td>F2</td><td>P6</td><td>P7</td><td>P</td><td>kardex</td><td>generar_certificado.php</td></tr>
+                        <tr><td>F2</td><td>P7</td><td>NULL</td><td>F</td><td>estudiante</td><td>descargar_certificado.php</td></tr>
+                    </table>
+                </div>
+                <h4>Tabla flujoCondicion (F2)</h4>
+                <div class="table-container">
+                    <table>
+                        <tr><th>flujo</th><th>proceso</th><th>procesoSI</th><th>procesoNO</th></tr>
+                        <tr><td>F2</td><td>P4</td><td>P5</td><td>P1</td></tr>
+                    </table>
+                </div>
+                <p><strong>Interpretación:</strong> Si Director2 <strong>aprueba</strong> → pago | Si <strong>rechaza</strong> → inicio</p>
+                <h4>Tabla seguimiento (F2) - Tickets 1003 y 1006</h4>
+                <div class="table-container">
+                    <table>
+                        <tr><th>ticket</th><th>proceso</th><th>usuario</th></tr>
+                        <tr><td>1003</td><td>P1-P7</td><td>Juan → kardex1 → director1 → director2 → caja1 → kardex1 → Juan</td></tr>
+                        <tr><td>1006</td><td>P1-P7</td><td>Juan → kardex1 → director1 → director2 → caja1 → kardex1 → juan</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tabla Usuarios -->
+            <div class="card">
+                <h3><i class="fas fa-users"></i> Tabla usuarios (compartida)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>usuario</th><th>nombre</th><th>rol</th></tr>
+                        <tr><td>juan</td><td>Juan Pérez</td><td>estudiante</td></tr>
+                        <tr><td>kardex1</td><td>María Choque</td><td>kardex</td></tr>
+                        <tr><td>director1</td><td>Carlos Flores</td><td>director1</td></tr>
+                        <tr><td>director2</td><td>Ana Mendoza</td><td>director2</td></tr>
+                        <tr><td>caja1</td><td>Luis Vargas</td><td>caja</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Diagrama resumido -->
+            <div class="card">
+                <h3><i class="fas fa-compress-arrows-alt"></i> Diagrama resumido</h3>
+                <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+                    <div style="background:#f0f7ff; padding:20px; border-radius:15px; min-width:250px;">
+                        <strong>Flujo F1 (Inscripción)</strong>
+                        <pre style="font-family:monospace; margin-top:8px;">P1→P2→P3→P4?→P5→P6
+        |
+       NO→P1</pre>
+                    </div>
+                    <div style="background:#fef9e7; padding:20px; border-radius:15px; min-width:250px;">
+                        <strong>Flujo F2 (Certificados)</strong>
+                        <pre style="font-family:monospace; margin-top:8px;">P1→P2→P3→P4?→P5→P6→P7
+        |
+       NO→P1</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== IMPLEMENTACIÓN Y PRUEBAS ==================== -->
+        <section id="implementacion" class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> d) Implementación y e) Pruebas</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3><i class="fas fa-laptop-code"></i> d) Implementación</h3>
+                    <p>Sistema web en <strong>PHP y JSON</strong> (sin bases de datos tradicionales). Incluye:</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-lock"></i> autenticación</li>
+                        <li><i class="fas fa-inbox"></i> bandeja de tareas</li>
+                        <li><i class="fas fa-sliders-h"></i> control de procesos</li>
+                        <li><i class="fas fa-history"></i> seguimiento de trámites</li>
+                        <li><i class="fas fa-project-diagram"></i> gestión dinámica de workflows</li>
+                    </ul>
+                    <div class="image-grid">
+                        <img src="https://via.placeholder.com/280x180/0a2a5e/white?text=Login+Sistema" alt="Login" class="image-preview" style="width:260px;">
+                        <img src="https://via.placeholder.com/280x180/1a4a8a/white?text=Password" alt="Password" class="image-preview" style="width:260px;">
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-check-circle"></i> e) Pruebas</h3>
+                    <p>Pruebas completas de ambos flujos verificando:</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle" style="color:green;"></i> asignación automática</li>
+                        <li><i class="fas fa-check-circle" style="color:green;"></i> cierre de tareas</li>
+                        <li><i class="fas fa-check-circle" style="color:green;"></i> cambio de responsable</li>
+                        <li><i class="fas fa-check-circle" style="color:green;"></i> finalización del workflow</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3>2. Herramientas y Tecnologías Empleadas</h3>
+                <div class="card-grid">
+                    <div>
+                        <h4>Lenguajes</h4>
+                        <div class="tech-tags"><span>PHP</span><span>HTML5</span><span>CSS</span></div>
+                    </div>
+                    <div>
+                        <h4>Herramientas</h4>
+                        <div class="tech-tags"><span>Visual Studio Code</span><span>XAMPP</span><span>Google Chrome</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <a href="file:///d:/abrir.bat">Abrir proyecto</a>
+
+        <!-- ==================== B. DESARROLLO 3D Y REALIDAD VIRTUAL ==================== -->
+        <section id="3d" class="section">
+            <h2 class="section-title"><i class="fas fa-vr-cardboard"></i> B. Desarrollo 3D y Realidad Virtual</h2>
+
+            <!-- B.a) Animación Unity -->
+            <h3 class="section-subtitle"><i class="fas fa-cubes"></i> B.a) Animación sincronizada en Unity</h3>
+            <div class="card">
+                <h3>ANIMACIÓN SINCRONIZADA EN UNITY</h3>
+                <h4>Descripción</h4>
+                <p>Escena 3D en Unity con múltiples personajes realizando coreografía sincronizada con música. Exportado en WebGL para navegador.</p>
+                <h4>Características principales</h4>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Escena 3D interactiva</li>
+                    <li><i class="fas fa-check-circle"></i> Múltiples personajes sincronizados</li>
+                    <li><i class="fas fa-check-circle"></i> Coreografía grupal animada</li>
+                    <li><i class="fas fa-check-circle"></i> Música sincronizada con animaciones</li>
+                    <li><i class="fas fa-check-circle"></i> Exportación WebGL</li>
+                </ul>
+                <div class="tech-tags">
+                    <span>Unity 6</span><span>C#</span><span>Animator Controller</span><span>Mecanim</span><span>Audio Source</span><span>WebGL</span>
+
+
+
+                <h4>Estructura del proyecto</h4>
+
+                <div class="code-block">
+                Assets/ → Animations/ | Audio/ | Materials/ | Models/ | Prefabs/ | Scenes/ | Scripts/ | WebGLBuild/
+                </div>
+
+                
+                
+
+                    <div 
+                        style="
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            margin-top:30px;
+                            width:100%;
+                        ">
+
+                        <iframe 
+                            frameborder="0" 
+                            src="https://itch.io/embed/4583728"
+                            width="900"
+                            height="220"
+                            style="
+                                border:none;
+                                border-radius:20px;
+                                overflow:hidden;
+                                box-shadow:0 10px 30px rgba(0,0,0,0.2);
+                                max-width:100%;
+                            ">
+
+                            <a href="https://jeycy.itch.io/coreografia">
+                                coreografia by jeycy
+                            </a>
+
+                        </iframe>
+
+                    </div>
+
+
+
+                <!-- <div style="margin-top:15px; text-align:center;">
+
+                    <strong>Link:</strong><br>
+
+                    <a 
+                        href="https://jeycy.itch.io/coreografia"
+                        target="_blank"
+                        style="
+                            color:#3498db;
+                            text-decoration:none;
+                            font-weight:600;
+                        ">
+
+                        https://jeycy.itch.io/coreografia
+
+                    </a>
+
+                </div> -->
+
+
+
+            </div>
+
+            <!-- B.b) Avatar -->
+            <h3 class="section-subtitle" id="avatar"><i class="fas fa-user-circle"></i> B.b) Avatar Digital por Fotogrametría</h3>
+            <div class="card">
+                <h3>CONSTRUCCIÓN DE AVATAR DIGITAL MEDIANTE FOTOGRAMETRÍA</h3>
+                <h4>Descripción</h4>
+                <p>Modelo 3D realista desde <strong>+100 fotografías</strong>. Procesado con Regard3D + Blender. Visualización web interactiva.</p>
+                <div class="tech-tags">
+                    <span>Regard 3D</span><span>Blender</span><span>PLY</span><span>GLB</span><span>P3D</span>
+                </div>
+                <h4>Proceso realizado</h4>
+                <ol style="margin-left:20px; line-height:2;">
+                    <li>Captura de +100 fotografías</li>
+                    <li>Reconstrucción de nube de puntos (Regard3D, +3 horas CPU)</li>
+                    <li>Generación de superficie 3D</li>
+                    <li>Exportación PLY → Limpieza en Blender → Exportación GLB</li>
+                </ol>
+                
+                <div class="image-grid" style="display:flex; gap:15px; margin-top:15px;">
+
+                    <!-- TRIANGULACIÓN -->
+                    <div style="text-align:center;">
+                        <img src="https://drive.google.com/thumbnail?id=1jwh5AOXq-xOaPDIa7yVndy5SP1Mqm0ll"
+                            alt="Triangulación"
+                            style="width:260px;">
+                        <div style="margin-top:5px; font-weight:bold;">Triangulación</div>
+                    </div>
+
+                    <!-- DENSIFICACIÓN -->
+                    <div style="text-align:center;">
+                        <img src="https://drive.google.com/thumbnail?id=1-E0S4-4P6J8B2pRKqrAWnACgSthkDMnO"
+                            alt="Densificación"
+                            style="width:234px;">
+                        <div style="margin-top:5px; font-weight:bold;">Densificación</div>
+                    </div>
+
+                    <!-- TEXTURIZACIÓN -->
+                    <div style="text-align:center;">
+                        <img src="https://drive.google.com/thumbnail?id=1E5x4lL71AIRvIzWa8yIutTLbREO6tL2w"
+                            alt="Texturización"
+                            style="width:260px;">
+                        <div style="margin-top:5px; font-weight:bold;">Texturización</div>
+                    </div>
+
+                </div>
+            
+        <h4>Visualización web de la Avatar</h4>
+                <a href="https://p3d.in/q4KG1" target="_blank" style="display:inline-block; background:var(--gradient-3); color:white; padding:12px 25px; border-radius:30px; text-decoration:none; font-weight:600;">
+                    <i class="fas fa-external-link-alt"></i> https://p3d.in/q4KG1
+                </a>
+
+        </div>
+
+            
+        </section>
+
+
+        <h4>Visualización web</h4>
+        <a href="https://p3d.in/q4KG1" target="_blank" style="display:inline-block; background:var(--gradient-3); color:white; padding:12px 25px; border-radius:30px; text-decoration:none; font-weight:600;">
+             <i class="fas fa-external-link-alt"></i> https://p3d.in/q4KG1
+                </a>
+
+        <!-- ==================== 3. ACTIVIDADES a, b, c ==================== -->
+        <section id="texturas" class="section">
+            <h2 class="section-title"><i class="fas fa-camera-retro"></i> 3. Actividades a, b y c · Procesamiento de Imágenes</h2>
+
+            <!-- a) Clasificación de texturas -->
+            <h3 class="section-subtitle"><i class="fas fa-th"></i> a) Clasificación de texturas</h3>
+
+
+
+            <div class="card">
+
+                <h3>CLASIFICACIÓN DE TEXTURAS</h3>
+
+                <p>
+                    Algoritmo desarrollado en <strong>C# y Windows Forms</strong> 
+                    para clasificar superficies mediante análisis RGB por bloques 
+                    de <strong>15x15 píxeles</strong>, identificando diferentes 
+                    tipos de cobertura y textura en imágenes digitales.
+                </p>
+
+                <div class="tech-tags">
+                    <span>C#</span>
+                    <span>.NET Framework</span>
+                    <span>GDI+</span>
+                    <span>Bitmap</span>
+                </div>
+
+                <h4>Referencias de Clasificación</h4>
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i class="fas fa-square" style="color:green;"></i>
+                        Vegetación → Verde
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:blue;"></i>
+                        Agua → Azul
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:brown;"></i>
+                        Tierra → Marrón
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:gray;"></i>
+                        Zona urbana → Gris
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:black;"></i>
+                        Asfalto o sombras → Negro
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:#ecf0f1;"></i>
+                        Nubes o nieve → Blanco
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:gold;"></i>
+                        Zonas secas → Amarillo
+                    </li>
+
+                    <li>
+                        <i class="fas fa-square" style="color:orange;"></i>
+                        Construcción o arcilla → Naranja
+                    </li>
+
+                </ul>
+
+                <div style="text-align:center; margin-top:20px;">
+
+                    <img 
+                        src="https://drive.google.com/thumbnail?id=1A7qwyQEb_MXljzGpUo2bDCaW-sCp-4h-&sz=w1000"
+                        alt="Resultado Clasificación de Texturas"
+                        class="image-preview"
+                        style="
+                            width:100%;
+                            max-width:650px;
+                            border-radius:15px;
+                            box-shadow:0 8px 25px rgba(0,0,0,0.2);
+                        ">
+
+                    <p style="
+                        margin-top:10px;
+                        color:#5a6c7d;
+                        font-size:0.95rem;
+                    ">
+                        Resultado del procesamiento y clasificación de texturas
+                    </p>
+
+                    <a 
+                        href="https://drive.google.com/file/d/1A7qwyQEb_MXljzGpUo2bDCaW-sCp-4h-/view?usp=sharing"
+                        target="_blank"
+                        style="
+                            display:inline-block;
+                            margin-top:10px;
+                            background:#3498db;
+                            color:white;
+                            padding:10px 18px;
+                            border-radius:25px;
+                            text-decoration:none;
+                            font-weight:600;
+                        ">
+                        Ver imagen completa
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- b) Filtro de suavizado -->
+            <h3 class="section-subtitle" id="filtro"><i class="fas fa-filter"></i> b) Filtro de suavizado</h3>
+            <div class="card">
+                <h3>IMPLEMENTACIÓN DE UN FILTRO DE SUAVIZADO</h3>
+                <p>Filtro promedio con ventana de <strong>3x3 píxeles</strong> para reducir ruido. Desarrollado en <strong>Python + OpenCV + NumPy</strong>.</p>
+                <div class="tech-tags"><span>Python</span><span>OpenCV</span><span>NumPy</span></div>
+                <h4>Código del filtro</h4>
+                <div class="code-block">
+<span style="color:#c792ea;">import</span> cv2<br>
+<span style="color:#c792ea;">import</span> numpy <span style="color:#c792ea;">as</span> np<br>
+imagen = cv2.imread(<span style="color:#c3e88d;">"imagen.jpg"</span>)<br>
+alto, ancho, canales = imagen.shape<br>
+resultado = np.zeros((alto, ancho, canales), dtype=np.uint8)<br>
+<span style="color:#c792ea;">for</span> i <span style="color:#c792ea;">in</span> <span style="color:#f78c6c;">range</span>(1, alto-1):<br>
+&nbsp;&nbsp;<span style="color:#c792ea;">for</span> j <span style="color:#c792ea;">in</span> <span style="color:#f78c6c;">range</span>(1, ancho-1):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ventana = imagen[i-1:i+2, j-1:j+2]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;resultado[i, j] = np.mean(ventana, axis=(0,1))<br>
+cv2.imwrite(<span style="color:#c3e88d;">"resultado.jpg"</span>, resultado)
+                </div>
+                <p><strong>Instalación:</strong> <code>pip install opencv-python</code></p>
+                
+                
+
+                <div style="text-align:center; margin:15px 0;">
+
+                    <img 
+                        src="https://drive.google.com/thumbnail?id=1rcGw_GA31RI6nGHebnzEZA7lyjdiqNDR&sz=w1000"
+                        alt="Comparación Original vs Suavizado"
+                        style="
+                            width:100%;
+                            max-width:700px;
+                            border-radius:15px;
+                            box-shadow:0 8px 25px rgba(0,0,0,0.2);
+                        ">
+
+                    <p style="
+                        margin-top:10px;
+                        color:#5a6c7d;
+                        font-size:0.95rem;
+                    ">
+                        Comparación: Imagen Original vs Filtro Suavizado 3x3
+                    </p>
+
+                    <a 
+                        href="https://drive.google.com/file/d/1rcGw_GA31RI6nGHebnzEZA7lyjdiqNDR/view?usp=sharing"
+                        target="_blank"
+                        style="
+                            display:inline-block;
+                            margin-top:10px;
+                            background:#3498db;
+                            color:white;
+                            padding:10px 18px;
+                            border-radius:25px;
+                            text-decoration:none;
+                            font-weight:600;
+                        ">
+                        Ver imagen completa
+                    </a>
+
+                </div>
+
+
+
+
+            </div>
+
+            <!-- c) Cover La Vaca Lola -->
+            <h3 class="section-subtitle" id="vaca"><i class="fas fa-music"></i> c) Cover La Vaca Lola</h3>
+            <div class="card">
+                <h3>COVER LA VACA LOLA - PRODUCCIÓN MULTIMEDIA</h3>
+                <p>Producción multimedia: extracción de frames, ordenamiento, reconstrucción de video y sincronización con audio usando <strong>FFmpeg</strong>.</p>
+                <div class="tech-tags"><span>Python</span><span>OpenCV</span><span>FFmpeg</span><span>Google Colab</span><span>Google Drive</span></div>
+                <h4>Estructura del módulo</h4>
+                <div class="code-block">vaca/ → baile.mp4 | vacalola.mp3 | frames/ | video.mp4 | videofinal.mp4</div>
+                <h4>Pasos en Google Colab</h4>
+                <ol style="margin-left:20px; line-height:2;">
+                    <li>Montar Drive: <code>drive.mount('/content/drive')</code></li>
+                    <li>Extraer frames con OpenCV</li>
+                    <li>Ordenar imágenes secuencialmente</li>
+                    <li>Reconstruir video con cv2.VideoWriter</li>
+                    <li>Sincronizar: <code>ffmpeg -i video.mp4 -i vacalola.mp3 -c:v copy -c:a copy videofinal.mp4</code></li>
+                </ol>
+
+
+
+                <div class="media-frame">
+
+                    <iframe
+                        src="https://drive.google.com/file/d/1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2/preview"
+                        width="100%"
+                        height="500"
+                        allow="autoplay"
+                        style="
+                            border:none;
+                            border-radius:15px;
+                            background:#000;
+                        ">
+                    </iframe>
+
+                </div>
+
+                <a href="https://drive.google.com/file/d/1doGAZBT9V7JoqMQpqM68mt3hApDEiTC2/view?usp=sharing"
+                target="_blank"
+                style="
+                display:inline-block;
+                margin-top:10px;
+                background:#e74c3c;
+                color:white;
+                padding:10px 20px;
+                border-radius:25px;
+                text-decoration:none;
+                font-weight:600;
+                ">
+                🎥 Ver / Descargar Video
+                </a>
+
+
+
+
+        </section>
+
+        <!-- ==================== 5. INFORME ==================== -->
+       <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:15px; justify-content:center;">
+            <a href="3_informe/informe%20multimedia%20mjal.pdf" 
+               target="_blank" 
+               style="display:inline-block; background:var(--gradient-3); color:white; padding:15px 35px; border-radius:50px; text-decoration:none; font-weight:700;">
+                <i class="fas fa-eye"></i> Ver PDF en navegador
+            </a>
+            <a href="3_informe/informe%20multimedia%20mjal.pdf" 
+               download="Informe_Multimedia_MJVL_UMSA_2026.pdf" 
+               style="display:inline-block; background:var(--gradient-1); color:white; padding:15px 35px; border-radius:50px; text-decoration:none; font-weight:700;">
+                <i class="fas fa-download"></i> Descargar PDF
+            </a>
+        </div>
+    </div>
+    
+    <div class="card" style="margin-top:25px; text-align:center; background:var(--gradient-2); color:#0a2a5e;">
+        <h3 style="color:#0a2a5e;"><i class="fas fa-trophy"></i> Resultado final</h3>
+        <p style="font-size:1.1rem; font-weight:600;">Sistema multimedia completo que integra procesamiento de imágenes, animación 3D, desarrollo web y sincronización audiovisual.</p>
+    </div>
+    
+    <div class="card" style="margin-top:25px; text-align:center;">
+        <h3><i class="fas fa-user-graduate"></i> Autora</h3>
+        <p style="font-size:1.2rem;"><strong>Práctica UMSA Informática Multimedia 2026</strong></p>
+        <p style="font-size:1.1rem; color:var(--primary);"><strong>Estudiante: Michelle Jeicy Avilés Loza</strong></p>
+    </div>
+
+    <!-- ==================== TRABAJOS EXTRAS ==================== -->
+    <section class="section">
+        <h2 class="section-title">
+            <i class="fas fa-folder-open"></i>
+            Trabajos Extras
+        </h2>
+
+        <!-- ==================== TRABAJO 1 ==================== -->
+        <div class="card">
+
+            <h3>
+                <i class="fas fa-robot"></i>
+                Trabajo Extra 1 · Procesamiento Multimedia con Google Colab, mi persona bailando con la Vaca Lola
+            </h3>
+
+            <p style="margin-top:10px;">
+                Proyecto desarrollado en <strong>Python y Google Colab</strong> orientado al
+                procesamiento multimedia y automatización de tareas audiovisuales.
+                El sistema realiza análisis y manipulación de contenido digital
+                utilizando librerías de visión computacional y procesamiento de imágenes.
+            </p>
+
+            <div class="tech-tags" style="margin-top:15px;">
+                <span>Python</span>
+                <span>Google Colab</span>
+                <span>OpenCV</span>
+                <span>NumPy</span>
+                <span>Procesamiento Multimedia</span>
+            </div>
+
+            <!-- GRAFICO -->
+            <h4 style="margin-top:25px;">
+                <i class="fas fa-chart-bar"></i>
+                Flujo General del Sistema
+            </h4>
+
+            <div class="diagram-container">
+
+                <svg width="100%" height="220" viewBox="0 0 900 220" style="max-width:850px;">
+
+                    <!-- Inicio -->
+                    <rect x="20" y="80" width="120" height="50" rx="15" fill="#0a2a5e"/>
+                    <text x="80" y="110" fill="white" font-size="14" text-anchor="middle" font-weight="bold">
+                        Inicio
+                    </text>
+
+                    <!-- Flecha -->
+                    <line x1="140" y1="105" x2="200" y2="105" stroke="#d4af37" stroke-width="4"/>
+
+                    <!-- Entrada -->
+                    <rect x="200" y="80" width="150" height="50" rx="15" fill="#1a4a8a"/>
+                    <text x="275" y="110" fill="white" font-size="13" text-anchor="middle" font-weight="bold">
+                        Carga de Archivos
+                    </text>
+
+                    <!-- Flecha -->
+                    <line x1="350" y1="105" x2="410" y2="105" stroke="#d4af37" stroke-width="4"/>
+
+                    <!-- Procesamiento -->
+                    <rect x="410" y="80" width="170" height="50" rx="15" fill="#0077b6"/>
+                    <text x="495" y="110" fill="white" font-size="13" text-anchor="middle" font-weight="bold">
+                        Procesamiento Python
+                    </text>
+
+                    <!-- Flecha -->
+                    <line x1="580" y1="105" x2="640" y2="105" stroke="#d4af37" stroke-width="4"/>
+
+                    <!-- Resultado -->
+                    <rect x="640" y="80" width="180" height="50" rx="15" fill="#00b4d8"/>
+                    <text x="730" y="110" fill="white" font-size="13" text-anchor="middle" font-weight="bold">
+                        Resultado Multimedia
+                    </text>
+
+                </svg>
+
+                <p style="margin-top:15px; color:#5a6c7d;">
+                    Flujo resumido del procesamiento multimedia ejecutado en Google Colab.
+                </p>
+
+            </div>
+
+            <!-- VIDEO -->
+            <h4 style="margin-top:25px;">
+                <i class="fas fa-video"></i>
+                Video Demostrativo
+            </h4>
+
+            <div class="media-frame">
+
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://drive.google.com/file/d/1MZHUzUnPF2jve96mE6LMv9vqa3xMzpVx/preview"
+                    title="Video demostrativo"
+                    allowfullscreen
+                    style="
+                        border:none;
+                        border-radius:15px;
+                        background:#000;
+                    ">
+                </iframe>
+
+            </div>
+
+            <!-- BOTON COLAB -->
+            <div style="text-align:center; margin-top:25px;">
+
+                <a
+                    href="https://colab.research.google.com/drive/11uFNvQ7NLZdjiKOxTm2mTgAJvId950Cr?authuser=1#scrollTo=Ma3bp74FdpOh"
+                    target="_blank"
+                    style="
+                        display:inline-block;
+                        background:var(--gradient-3);
+                        color:white;
+                        padding:14px 30px;
+                        border-radius:35px;
+                        text-decoration:none;
+                        font-weight:700;
+                        box-shadow:0 8px 25px rgba(0,0,0,0.2);
+                    ">
+
+                    <i class="fab fa-google"></i>
+                    Abrir Proyecto en Google Colab
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ==================== ESPACIOS PARA MÁS TRABAJOS ==================== -->
+
+        <div class="card">
+            <h3><i class="fas fa-folder"></i> Trabajo Extra 2</h3>
+            <p style="color:#5a6c7d;">
+                Espacio reservado para futuros proyectos multimedia, inteligencia artificial,
+                visión computacional o desarrollo web.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-folder"></i> Trabajo Extra 3</h3>
+            <p style="color:#5a6c7d;">
+                Espacio reservado para futuros trabajos académicos y proyectos prácticos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-folder"></i> Trabajo Extra 4</h3>
+            <p style="color:#5a6c7d;">
+                Espacio reservado para presentaciones multimedia y aplicaciones interactivas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-folder"></i> Trabajo Extra 5</h3>
+            <p style="color:#5a6c7d;">
+                Espacio reservado para nuevos desarrollos tecnológicos y contenido audiovisual.
+            </p>
+        </div>
+
+    </section>
+
+    <div class="card" style="margin-top:25px; text-align:center;">
+        <h3><i class="fas fa-user-graduate"></i> Autora trabajos extra</h3>
+        <p style="font-size:1.2rem;"><strong>Práctica UMSA Informática Multimedia 2026</strong></p>
+        <p style="font-size:1.1rem; color:var(--primary);"><strong>Estudiante: Michelle Jeicy Avilés Loza</strong></p>
+    </div>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer>
+            <p>© 2026 <strong>Michelle Jeicy Avilés Loza</strong> · C.I. 12390932</p>
+            <p>Proyecto Multimedia · Informática UMSA · La Paz - Bolivia</p>
+            <p>Docente: Lic. Moisés Silva | 3 de junio de 2026</p>
+            <p style="margin-top:15px; font-size:0.85rem;">
+                <i class="fas fa-code"></i> PHP · JSON · Unity · C# · Python · OpenCV · FFmpeg · Blender · Regard3D · WebGL
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
